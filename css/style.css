@@ -1,0 +1,213 @@
+/* html, body { */
+    /* height: 100% */
+/* } */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    background-color: ghostwhite;
+    /* font-family: "Josefin Sans" */
+}
+
+div {
+    overflow: auto;
+}
+
+#content-body {
+    margin: 0 auto;
+    max-width: 70em;
+    line-height: 2;
+    padding: 0 1em 1em 1em;
+    background-color: white;
+    box-shadow: 0px 0px 5px #888888;
+    overflow: auto;
+}
+
+#page-head {
+    padding-top: 20em;
+    font-size: 18px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)), 
+        url('res/images/header.jpg');
+    background-position: center;
+    /* background-image: url('res/images/header.jpg'); */
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+#topline {
+    /* width: 100%; */
+    padding: 1em 2em 1em 2em;
+    /* margin-top: 1em; */
+    /* margin-bottom: 1em; */
+}
+
+h1#topname {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    color: white;
+    /* font-family: 'Oswald', sans-serif; */
+}
+
+#social-media-bar {
+    display: inline-block;
+    float: right;
+    /* margin-top: 2em; */
+    /* padding-top: 1.5em; */
+}
+
+.social-media-button {
+    float: right;
+    padding: 0 .5em 0 .5em;
+    height: 3em;
+    display: inline-block;
+}
+
+/* .social-media-button:hover { */
+
+/*     box-shadow: 0px 0px 10px #888888; */
+/* } */
+
+#navbar {
+    /* margin-bottom: 1em; */
+    background-color: black;
+    padding-left: 1em;
+    /* font-family: 'Oswald', sans-serif; */
+}
+
+.navbutton {
+    display: inline-block;
+    padding: 1em 1.5em 1em 1.5em;
+    margin-right: -.3em;
+    text-align: center;
+    vertical-align: middle;
+    width: 5em;
+    color: white;
+    /* border-radius: 5px */
+    /* background-color: lightblue; */
+}
+
+.navbutton-selected {
+    background-color: #888888;
+}
+
+.navbutton:hover {
+   background-color: white;
+   color: black;
+}
+
+#page-title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* background-color: ghostwhite; */
+    text-align: center;
+}
+
+.portfolio-section {
+    margin: 1em;
+    overflow: auto;
+}
+
+.portfolio-column {
+    width: 50%;
+    display: inline-block;
+}
+
+.section-title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 1em;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.section-content {
+    overflow: auto;
+}
+
+#music-section-title {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url('res/images/music-section-header.jpg');
+    background-position: center;
+}
+
+#code-section-title {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url('res/images/code-section-header.png');
+    background-position: center;
+}
+
+/* a { */
+/*     text-color: white; */
+/* } */
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.subsection-header {
+    text-align: center;
+}
+
+.soundclouditem {
+    margin: 1em;
+    padding: 1.5em;
+    font-size: 11pt;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 0px 10px #888888;
+}
+
+#section-menu {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    /* margin-bottom: -1em; */
+    /* padding: 1em; */
+    background-color: black;
+    line-height: 1.5;
+    /* padding-top: 1em; */
+    /* padding-bottom: 1em; */
+    position: fixed;
+    bottom: 0;
+    /* top: 512px; */
+    /* right: 0; */
+}
+
+.section-link {
+    padding: .7em 2em .7em 2em;
+    margin-left: -.25em;
+    width: 3em;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+.section-link-inv {
+    background-color: white;
+    color: black;
+}
+
+.section-link:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
