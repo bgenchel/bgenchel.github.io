@@ -23,9 +23,9 @@ $(document).ready(function() {
         }
         for(var i = 0; i < sectionLinks.length; i++){
             if(sectionLinks[i].id == link_id){
-                sectionLinks[i].classList.add("section-link-inv");
+                sectionLinks[i].classList.add("section-link-on");
             } else {
-                sectionLinks[i].classList.remove("section-link-inv");
+                sectionLinks[i].classList.remove("section-link-on");
             }
         }
     });
