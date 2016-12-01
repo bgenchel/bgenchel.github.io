@@ -8,18 +8,18 @@ $(document).ready(function() {
 
     $(window).scroll(function(e) {
         var musicDiv = $("#music");
-        var codeDiv = $("#code");
-        var designDiv = $("#design");
+        var projectsDiv = $("#projects");
+        var otherDiv = $("#other");
         var sectionLinks = $(".section-link");
         var windowCenter = $(window).scrollTop() + $(window).height()/2;
 
         var link_id;
-        if(musicDiv.position().top <= windowCenter && windowCenter <= codeDiv.position().top){
+        if(musicDiv.position().top <= windowCenter && windowCenter <= projectsDiv.position().top){
             link_id = "music-link";
-        } else if(codeDiv.position().top <= windowCenter  && windowCenter <= designDiv.position().top){
-            link = "code-link";
-        } else if(designDiv.position().top <= windowCenter){
-            link = "design-link";
+        } else if(projectsDiv.position().top <= windowCenter  && windowCenter <= otherDiv.position().top){
+            link_id = "projects-link";
+        } else if(otherDiv.position().top <= windowCenter){
+            link_id = "other-link";
         }
         for(var i = 0; i < sectionLinks.length; i++){
             if(sectionLinks[i].id == link_id){

@@ -139,7 +139,7 @@ h1#topname {
     background-position: center;
 }
 
-#code-section-title {
+#projects-section-title {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)),
@@ -166,6 +166,11 @@ h1#topname {
     line-height: 1.5;
     position: fixed;
     bottom: 0;
+}
+
+.project-title {
+    margin-top: 0;
+    text-align: center;
 }
 
 .section-link {
