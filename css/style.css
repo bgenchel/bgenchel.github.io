@@ -119,8 +119,8 @@ h1#topname {
 }
 
 .section-title {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     margin: 1em;
     text-align: center;
     color: white;
@@ -171,6 +171,7 @@ h1#topname {
 .project-title {
     margin-top: 0;
     text-align: center;
+    font-size: 2em;
 }
 
 .section-link {
@@ -184,6 +185,21 @@ h1#topname {
 
 .section-link-on {
     background-color: #344666;
+}
+
+.caption {
+    font-size: 11px;
+}
+
+.project-body {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.project-media {
+    margin-top: 2em;
+    margin-bottom:2em;
+    text-align: center;
 }
 
 .section-link:hover {

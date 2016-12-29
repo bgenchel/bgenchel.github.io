@@ -8,15 +8,22 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/webpd-latest.js"></script>
+    <script>
+        var patch
+        $.get('res/drumMachinePatch.pd', function(patchStr) {
+          patch = Pd.loadPatch(patchStr)
+          Pd.start()
+        })
+    </script>
 </head>
-
 <body>
     <div id="page-head">
         <div id="topline">
             <h1 id="topname"> Benjamin H. Genchel </h1>
             <div id="social-media-bar">
                 <a href="http://github.com/bgenchel">
-                    <img class="social-media-button" src="css/res/icons/github.svg"></a>
+                    <img class="social-media-button" src="css/res/icons/github.svg">
                 </a>
                 <a href="http://linkedin.com/in/benjamingenchel">
                     <img class="social-media-button" src="css/res/icons/linkedin.svg">
@@ -422,15 +429,302 @@
         <div id="projects" class="portfolio-section">
             <div id="projects-section-title" class="section-title"><h2>Projects</h2></div>
             <div id="projects-section-content" class="section-content">
-                <div class="portfolio-item">
+                <div id="cleverpet" class="portfolio-item">
                     <h2 class="project-title">CleverPet</h2>
-                    <div style="text-align: center;">
+                    <div class="project-media">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/9H4577C3p-g"
+                            frameborder="0" allowfullscreen></iframe>
+                        <p class="caption">
+                            2016 promotional video showcasing the CleverPet Hub
+                        </p>
+                    </div>
+                    <p class="project-body">
+                    CleverPet is a San Diego based startup that produces an IOT
+                    training console for pets. The founders, computational
+                    neuroscience PhDs from UCSD that specialized in training animals
+                    with computers, sought to bring their research to the consumer
+                    market to benefit animals and owners alike. CleverPet seeks to
+                    both enrich the lives of pets through automated engagement as
+                    well as reveal their cognitive potential to their owners.<br>
+                    <br>
+                    </p>
+                    <div class="project-media">
                         <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/jp2qqQ3RKTw" frameborder="0"
                             allowfullscreen></iframe>
+                        <p class="caption">
+                            Me and Kara Knudsen, Head of Customer Experience, presenting the CleverPet Hub at CES 2016
+                        </p>
                     </div>
-                    <p>
+                    <p class="project-body">
+                    It was my absolute pleasure to work as an engineer for
+                    CleverPet through an internship in the summer of 2015 and year
+                    working as a full time software engineer. My primary work and
+                    responsibilty was ownership of the backend. I architected
+                    and built the current running version of the backend API
+                    in Python on the Google Cloud Platform, and continued to
+                    maintain and expand it over time. Designing the backend
+                    included modeling data for the client ecosystem (pets, owners,
+                    devices), exposing routes for sending and recieving formatted
+                    data, processing, and authentication. In addition, I wrote
+                    and rewrote large sets of unit tests, implemented parallelized
+                    load testing using Google Compute instances, and provided
+                    several utility scripts for the rest of the team to interface
+                    with the API and datastore.<br>
+                    <br>
                     </p>
+                    <div class="project-media">
+                        <!-- <a href="https://cloud.google.com/"> -->
+                        <!--     <img width="560" height="400" src="css/res/images/cp_architecture_diagram.jpg"> -->
+                        <!-- </a> -->
+                        <!-- <p class="caption"> -->
+                        <!--     Backend Architecture Diagram from mid 2016 -->
+                        <!-- </p> -->
+                    </div>
+                    <p class="project-body">
+                    I also developed and debugged firmware running on the device's
+                    microntroller: The Particle Photon. I wrote code specifically
+                    for interfacing with the cloud backend; modules that requested,
+                    parsed and confirmed the receipt of new games, as well as
+                    modules that managed the send and receive of messages
+                    over tcp.<br>
+                    <br>
+                    </p>
+                    <div class="project-media">
+                        <a href="https://store.particle.io/#photon">
+                            <img width="320" height="400"
+                                src="css/res/images/particle_photon_2016.jpg"
+                                alt="Particle Photon Development Board">
+                        </a>
+                        <p class="caption">
+                            The Particle Photon; used as a development board for the
+                            CleverPet Hub.
+                        </p>
+                    </div>
+                    <p class="project-body">
+                    Because CleverPet was so small during my time there, I often worked
+                    on miscellaneous tasks whenever they popped up and jumped around
+                    from project to project. I developed a promotional site for a
+                    conference, tested hardware, assembled demos, and debugged and
+                    contributed code for the mobile app to name a few.<br>
+                    <br>
+                    </p>
+                    <div class="project-media">
+                        <img width="600" height="400" src="css/res/images/cp_promotion_screenshot.png">
+                        <p class="caption">
+                            Screenshot of a Promotional Page created for the 2015 Wallstreet Journal Live event
+                            in San Diego. Created with Node.js + Express and EJS.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="intellisis" class="portfolio-item">
+                    <h2 class="project-title">Intellisis</h2>
+                    <p class="project-body">
+                    Intellisis, now known as <a href="https://www.knuedge.com/">KnuEdge</a>
+                    , is a technology start up based in San Diego founded and headed by
+                    former NASA head of administration Dan Goldin, with the general
+                    purpose of making innovations in hardware and software systems based
+                    on the functions of biological systems. KnuEdge now acts as an umbrella
+                    corporation over a few other more specifically directed companies all
+                    of which used to be Intellisis. While at Intellisis during the summer of
+                    2014, I worked as a Software/Signal Processing Intern in the 
+                    group that seems to have become the spin off company <a href="https://www.knuverse.com/">KnuVerse</a>.
+                    <br><br>
+                    </p>
+                    <div class="project-media">
+                        <img width="450" height="300" src="css/res/images/KnuVerse_logo.png">
+                        <p class="caption">
+                        The logo for KnuVerse, a subsidiary of KnuEdge. KnuVerse encapsulates the work I did while at Intellisis.
+                        </p>
+                    </div>
+                    <p class="project-body">
+                    My team worked on developing a military grade voice recognition
+                    based security system called the AudioPIN, and building it into various client side
+                    applications such as a web app, VoIP, and mobile app (Android) to
+                    demonstrate its wide ranging applicability. During my internship,
+                    I primarily worked on three projects:
+                    </p>
+                    <ul style="margin-left: 3em; margin-right: 3em">
+                        <li> Parallelizing python 'nose' unit tests for the voice
+                            recognition system using Oracle's Sun Grid Engine.</li>
+                        <li> Building a front end desktop application using PyQT 
+                            for testing and gathering data on 'over the shoulder'
+                            attacks.</li>
+                        <li> Developing an Android App for the purpose of demonstrating
+                            the mobile potential of the system.</li>
+                    </ul>
+                    <p class="project-body">
+                    My primary project, and certainly the one that took the most time
+                    and effort was building the android app. The project was initially
+                    going to be passed on to a contractor, but I volunteered to help out
+                    because I had taught myself some android the previous summer and
+                    was interested in learning more. Eventually, I became wrapped
+                    up in the work, and was making progress quickly enough for the team
+                    to forgo the contractor and allow me to develop the project
+                    independently. I finished a functioning app; it
+                    allowed a user to train the system on their voice, choose various
+                    settings, and set a rudimentary lock screen using the system.<br>
+                    <br>
+                    Though my work particularly was undocumented (this project was under
+                    wraps during my time there), a later iteration of my project is
+                    demonstrated in the video below.
+                    </p>
+                    <div class="project-media">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/05l-vEUH30s"
+                            frameborder="0" allowfullscreen></iframe>
+                        <p class="caption">
+                            A video introducing the AudioPIN in android app form. My
+                            primary project at Intellisis was developing an early version
+                            of the app shown here.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="musicdeepnets" class="portfolio-item">
+                    <h2 class="project-title">Music with Deep Nets</h2>
+                </div>
+                <div id="ttwebapp" class="portfolio-item">
+                    <h2 class="project-title">Theta Tau Garnett</h2>
+                    <div class="project-media">
+                        <img width="400" height="175" src="css/res/images/garnett-logo.png">
+                        <p class="caption">
+                            The very simple logo for Garnett, designed in <a href="canva.com">Canva</a>.
+                        </p>
+                    </div>
+                    <p class="project-body">
+                    As the webmaster for my professional engineering fraternity, 
+                    I proposed and led a team to develop an internal organizational webapp
+                    in order to facilitate task completion and better organization
+                    and flow of information through the active body.<br>
+                    <br>
+                    The idea sprouted from the organization's inefficient use of 
+                    multiple technologies; when I began my tenure, information
+                    was evenly distributed between a chaotic private forum, a
+                    facebook group, various mobile chat apps and google docs.
+                    Nothing appeared coherent, and members were constantly uniformed
+                    in various ways though one could easily envision a space in
+                    which all the needs those technologies filled were
+                    satisfied and integrated in a coherent manner.<br><br>
+                    </p>
+                    <p class="project-body">
+                    Over two years, the project evolved in concept in technology.
+                    When I began leading the project, my teamates and I (to a much
+                    greater extent) had minimal experience with web development;
+                    I had hoped we could all learn through working on it. What that
+                    meant though, was that there was very little specific direction for progress.
+                    I had thought that Php was still the language of the web, and
+                    codecademy's course on the language further convinced me of that
+                    notion. Further, I personally had little experience leading, and
+                    no experience leading a software team. By the end of the first year,
+                    we had some good ideas out, a few pivots, and a function login
+                    screen.<br><br>
+                    </p>
+                    <p class="project-body">
+                    Fortunately, at the end of the year, I was able to recruit the help
+                    of a few senior members that acted as co leaders and helped to push
+                    the project forward. We started from scratch with modern tools:
+                    Node.js, Angular.js, Heroku, and PosgreSQL. We had
+                    conceptual meetings and came up with a more concrete direction for
+                    the app - a timeline centric social network built around a core
+                    'event' data model that could be generalized to a wide range of
+                    conceptual entities. In addition, we cleaned out inactive
+                    members and brought on younger members that we could mentor and
+                    who could continue the project after we had graduated. Mentorship,
+                    and the creation of a base that could be used as a project and
+                    teaching tool to boost the careers of younger members became 
+                    a central goal of the project.
+                    </p>
+                    <p class="project-body">
+                    As a team lead, I organized weekly meetings, attempted to
+                    implement agile coding practices and worked to divide tasks
+                    in a way that would give people room to learn and work in
+                    areas they were interested in. I worked closely with my
+                    co-leaders to choose appropriate technologies for development
+                    and deployment, implement proper coding practices, and
+                    drive development forward both in terms of defining direction
+                    and contributing code. In addition, I served as designer and 
+                    created mockups (seen here) to define the look and function
+                    of various app componenets.
+                    </p>
+                </div>
+                <div id="drumMachine" class="portfolio-item">
+                    <h2 class="project-title">PureData Drum Machine</h2>
+                    <div class="project-media">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/LE8ZIlj97S8"
+                            frameborder="0" allowfullscreen></iframe>
+                        <p class="caption">
+                           A demonstration of the main patch as used for generating
+                           rough, random beats.
+                        </p>
+                    </div>
+                    <p class="project-body">
+                    This <a href="https://puredata.info/">PureData</a>
+                    patch was developed as a final project for my Computer
+                    Music class at UC San Diego. As a drummer, I was interested
+                    in attempting to synthesize drum sounds from scratch. Additionally,
+                    through the course and through my attempts to produce music in
+                    my free time, I came to realize how inspirational randomness 
+                    was for me. I attempted to combine these ideas in this patch,
+                    a drum machine with accompanying random bassline.
+                    </p>
+                    <p class="project-body">
+                    I think this patch is cool because on its own it's able to
+                    produce something akin to listenable music, and some of the
+                    basslines that come out of just random assignment are mesmerizing.
+                    Additionally, because the line is purely random, it forces me
+                    to digest and build on music that doesn't adhere to a particular
+                    timing or key.<br><br>
+                    </p>
+                    <p class="project-body">
+                    The snare, kick and high hat sound standard; they kind of
+                    remind me of 8 bit instruments. The crash was the hardest to 
+                    work on and also the instrument that sounds least like it "should".
+                    The had read a small blurb on the internet saying that a crash sound
+                    was made by having many frequencies decay at different rates, with
+                    the high frequencies lasting much longer than the low frequencies.
+                    In retrospect, I should have included many more frequencies, covering
+                    the frequency space with much higher resolution. Though what 
+                    I got was certainly not what I was looking for, I still found
+                    the sound interesting enough to keep. To me, it sounds sort of like an
+                    electronic version of hitting the inside of a piano with a long paddle.
+                    </p>
+                </div>
+                <div id="bhglib" class="portfolio-item">
+                    <h2 class="project-title">bhglib/practice</h2>
+                    <p class="project-body">
+                    In my little bits of spare time, I often find myself working
+                    on practice questions for interviews or tutorials for things I
+                    find interesting. I realized after some time that in working on
+                    these types of things, I was generating a lot of potentially useful
+                    code (as well as sample code to show to those who request it),
+                    and since I almost singularly in Python I thought it
+                    could be useful to compile those snippets into a library that
+                    I could import for future projects. The 'bhglib' repo was started
+                    with that intent. It is small now, and doesn't have to much in it,
+                    but my hope is that it will keep growing as I keep coding both
+                    in personal projects and academia/industry.<br>
+                    <br>
+                    In addition, I also have many many practice problems that I save
+                    that aren't particularly generalizable (or at least, I haven't seen
+                    how to generalize them yet) and so I've also began posting those
+                    as a repo separate from the libary. I feel that it's good to keep a record
+                    of all work done, as well as share solutions publicly for those
+                    who might find them useful.
+                    </p>
+                    <div class="project-media">
+                        <a href="https://github.com/bgenchel/bhglib"><h3>bhglib</h3></a>
+                        <a href="https://github.com/bgenchel/practice"><h3>practice</h3></a>
+                        <p class="caption">
+                        Links to the aformentioned projects on Github
+                        </p>
+                    </div>
+                </div>
+                <div id="websites" class="portfolio-item">
+                    <h2 class="project-title">Websites</h2>
                 </div>
             </div>
         </div>
