@@ -28,5 +28,33 @@ $(document).ready(function() {
                 sectionLinks[i].classList.remove("section-link-on");
             }
         }
+
+        if($("#projects-link").hasClass("section-link-on")){
+            $(".project-link").css("background-color", "#344666");
+        } else {
+            $(".project-link").css("background-color", "black");
+        }
+    });
+
+    $("#projects-link").hover(function(e) {
+        $("#project-links").css("display", "inline-block");
+        if($("#projects-link").hasClass("section-link-on")){
+            $(".project-link").css("background-color", "#344666");
+        } else {
+            $(".project-link").css("background-color", "black");
+        }
+    });
+
+    $("#music-link").mouseenter(function(e) {
+        $("#project-links").css("display", "none");
+    });
+
+    $("#other-link").mouseenter(function(e) {
+        $("#project-links").css("display", "none");
+    });
+
+    $("#section-menu").mouseleave(function(e) {
+        $("#project-links").css("display", "none");
     });
 });
+
