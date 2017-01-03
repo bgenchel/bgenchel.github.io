@@ -32,6 +32,19 @@ a:link {
     text-decoration: none;
 }
 
+#self-picture {
+    width: 80%;
+    height: 80%;
+    padding: 10% 10% 10% 10%;
+}
+
+#about-me-container {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 #content-body {
     margin: 0 auto;
     max-width: 70em;
@@ -113,7 +126,7 @@ h1#topname {
     overflow: auto;
 }
 
-.portfolio-column {
+.half-column {
     width: 50%;
     display: inline-block;
 }
