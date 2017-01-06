@@ -33,9 +33,9 @@ a:link {
 }
 
 .self-picture {
-    width: 80%;
-    height: 80%;
-    padding: 10% 10% 10% 10%;
+    width: 60%;
+    height: 60%;
+    padding: 5% 20% 5% 20%;
 }
 
 #about-me-container {
@@ -126,7 +126,13 @@ h1#topname {
     overflow: auto;
 }
 
-.half-column {
+.half-column-1 {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.half-column-2 {
     width: 50%;
     display: inline-block;
 }
