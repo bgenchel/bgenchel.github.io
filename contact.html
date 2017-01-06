@@ -36,10 +36,12 @@
     <div id="content-body">
         <div style="padding-top: 1em; pading-bottom: 1em;"></div>
         <div id="page-title"><h1>Contact Me</h1></div>
-        <form action="https://formspree.io/benjiegenchel@gmail.com" method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <input type="submit" value="Send">
+        <form id="contact-form" action="https://formspree.io/benjiegenchel@gmail.com" method="POST">
+            <input class="contact-form-field" type="text" name="name" placeholder="Name*" required>
+            <input class="contact-form-field" type="email" name="email" placeholder="Email*" required>
+            <textarea class="contact-form-field" rows="15" type="text" name="message"
+                placeholder="Message*" required></textarea>
+            <input id="contact-form-submit" type="submit" value="Send">
         </form>
         <div style="padding-top: 1em; pading-bottom: 1em;"></div>
     </div>
