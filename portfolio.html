@@ -473,12 +473,15 @@
                     <br>
                     </p>
                     <div class="project-media">
-                        <!-- <a href="https://cloud.google.com/"> -->
-                        <!--     <img width="560" height="400" src="css/res/images/cp_architecture_diagram.jpg"> -->
-                        <!-- </a> -->
-                        <!-- <p class="caption"> -->
-                        <!--     Backend Architecture Diagram from mid 2016 -->
-                        <!-- </p> -->
+                        <a href="https://cloud.google.com/">
+                            <img width="700" height="300" src="css/res/images/google-cloud-platform.png">
+                        </a>
+                        <p class="caption">
+                            CleverPet's backend is built on Google's Cloud Platform, which
+                            encompasses a number of services. During my time there, we
+                            used Google App Engine, Google Big Table, Google Big Query,
+                            and Google Identity Toolkit.
+                        </p>
                     </div>
                     <p class="project-body">
                     I also developed and debugged firmware running on the device's
@@ -513,6 +516,27 @@
                         <p class="caption">
                             Screenshot of a Promotional Page created for the 2015 Wallstreet Journal Live event
                             in San Diego. Created with Node.js + Express and EJS.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img width="300" height="520"
+                        src="css/res/images/data_in_app.jpg">
+                        <p class="caption">
+                            Automated data graph generation for mobile clients.
+                            I wrote the backend + iOS code supporting the first iteration
+                            of this functionality.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ZWf0nFsP1RA"
+                            frameborder="0" allowfullscreen></iframe>
+                        <p class="caption">
+                            I short jingle I wrote for the CleverPet (which is monophonic,
+                            and has only one voice) to play as a reward or attractor for pets.
+                            Used for demo purposes during a demo symposium for the
+                            Qualcomm Robotics Accelorator at the end of the company's time
+                            there.
                         </p>
                     </div>
                 </div>
@@ -582,14 +606,78 @@
                 </div>
 
                 <div id="musicdeepnets" class="portfolio-item">
-                    <h2 class="project-title">Music with Deep Nets</h2>
+                    <h2 class="project-title">Music Generation with Deep Neural Nets</h2>
+                    <p class="project-body">
+                    Since early 2016, I've been volunteering in a research project/group
+                    in the computer science department focused on generating music with
+                    deep neural networks. There have been many attempts at doing something
+                    like this in the past, and many are still investigating it today.
+                    The primary issue with current methods is a lack of long term
+                    structure in generating music.<br>
+                    <br>
+                    This project seeks to leverage the
+                    <a href="https://goo.gl/GYIkE1">neural turing machine</a> concept,
+                    a network that learns to leverage external memory developed by
+                    <a href="https://deepmind.com/">Google DeepMind</a>. The idea
+                    is to coordinate several temporally local convolutional networks
+                    composing music from small windows of training data, and then train
+                    a neural turing architecture to select and control those TLCs
+                    (temporally local composers) to produce a longer piece of music.
+                    </p>
+                    <div class="project-media">
+                        <img width="780" height="494" src="css/res/images/MGWDN_Poster.png">
+                        <p class="caption">
+                            A poster for the project presented at the Frontiers of
+                            Innovation Scolars Program (FISP) Symposium at UC San Diego
+                            in the Fall of 2016.
+                        </p>
+                    </div>
+                    <p class="project-body">
+                    The leader of the project,
+                    <a href="https://www.linkedin.com/in/mohsen-malmir-458a8856">Mohsen Malmir</a>,
+                    is a PhD candidate in Computer Science from UC San Diego whose prior
+                    work focused heavily on computer vision applications. Because of this,
+                    we've aimed to translate the problem into a more vision-like space
+                    by using piano roll images as input instead of standard MIDI or wave
+                    data.<br>
+                    <br>
+                    My role in the project thus far has been to run and train various
+                    networks, develop auxillary tools for MIDI I/O and present relevant
+                    papers at weekly journal clubs. In addition, I've been researching
+                    network visualization, or in this case audition, through the methods
+                    described in
+                    <a href="http://www.cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf">
+                        Zeiler, M., Fergus, R.: Visualizing and Understanding
+                        Convolutional Networks, 2013
+                    </a><br>
+                    <br>
+                    As mentioned above, our weekly joural club discussing relevant papers
+                    regarding music generation with deep networks and related topics has
+                    been a large component of this project so far. Some of the papers
+                    we've gone over, in addition to the visualization paper listed above:<br>
+                    </p>
+                    <ul style="margin-left: 3em; margin-right: 3em;">
+                        <li>Chung, J., Kastner, K., Dinh, L., Goel, K., Courville, A.,
+                            Bengio, Y.: A Recurrent Latent Variable Model for Sequential
+                            Data, 2015
+                        </li>
+                        <li>Grill, T., Schluter, J.: Music Boundary Detection USing Neural
+                            Networks on Spectrograms and Self-Similarity Lag Matrices,
+                            2015.</li>
+                        <li>Graves, A., Wayne, G., Danihelka, I.: Neural Turing Machines,
+                            2014.</li>
+                        <li>Boulanger-Lewandowski, N.: Modeling High-Dimensional Audio
+                            Sequences with Recurrent Neural Networks, 2014.
+                        </li>
+                    </ul>
                 </div>
                 <div id="ttwebapp" class="portfolio-item">
                     <h2 class="project-title">Theta Tau Garnett</h2>
                     <div class="project-media">
                         <img width="320" height="140" src="css/res/images/garnett-logo.png">
                         <p class="caption">
-                            The very simple logo for Garnett, designed in <a href="canva.com">Canva</a>.
+                            The very simple logo for Garnett, designed in <a
+                                href="canva.com">Canva</a>.
                         </p>
                     </div>
                     <p class="project-body">
@@ -751,6 +839,13 @@
                     in personal projects and academia/industry.<br>
                     <br>
                     </p>
+                    <div class="project-media">
+                        <img src="css/res/images/bst_code.png">
+                        <p class="caption">
+                        Code from my implementation of an AVL Binary Search Tree,
+                        from the bhglib project.
+                        </p>
+                    </div>
                     <p class="project-body">
                     In addition, I also have many many practice problems that I save
                     that aren't particularly generalizable (or at least, I haven't seen
@@ -806,8 +901,9 @@
         <div id="project-links">
             <a href="#cleverpet" class="project-link">CleverPet</a>
             <a href="#intellisis" class="project-link">Intellisis</a>
+            <a href="#musicdeepnets" class="project-link">Music Generation with Deep Nets</a>
             <a href="#ttwebapp" class="project-link">Garnett</a>
-            <a href="#drumMachine" class="project-link">Drum Machine</a>
+            <a href="#drumMachine" class="project-link">PureData Drum Machine</a>
             <a href="#websites" class="project-link">Websites</a>
         </div>
         <div id="section-links">
