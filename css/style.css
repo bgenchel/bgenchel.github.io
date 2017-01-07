@@ -293,7 +293,7 @@ input:focus, textarea:focus {
     width: 3em;
     display: inline-block;
     color: white;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 
@@ -302,8 +302,9 @@ input:focus, textarea:focus {
 }
 
 #music-link {
-    background-color: #7f3c05;
+    /* background-color: #7f3c05; */
     /* background-color: #3d3f4f; */
+    background-color: #e56b20;
 }
 
 #projects-link {
@@ -324,7 +325,8 @@ input:focus, textarea:focus {
     padding: .7em 0em .7em 0em;
     width: 100%;
     display: block;
-    background-color: #7f3c05;
+    /* background-color: #7f3c05; */
+    background-color: #e56b20;
     color: white;
 }
 

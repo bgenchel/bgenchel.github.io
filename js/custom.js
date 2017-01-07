@@ -45,21 +45,21 @@ $(document).ready(function() {
     $("#music-link").mouseenter(function(e) {
         $("#music-links").css("display", "inline-block");
         $("#project-links").css("display", "none");
-        if($("#music-link").hasClass("section-link-on")){
-            $(".song-link").css("background-color", "#344666");
-        } else {
-            $(".song-link").css("background-color", "#7f3c05");
-        }
+        // if($("#music-link").hasClass("section-link-on")){
+        //     $(".song-link").css("background-color", "#344666");
+        // } else {
+        //     $(".song-link").css("background-color", "#ff7700");
+        // }
     });
 
     $("#projects-link").mouseenter(function(e) {
         $("#music-links").css("display", "none");
         $("#project-links").css("display", "inline-block");
-        if($("#projects-link").hasClass("section-link-on")){
-            $(".project-link").css("background-color", "#344666");
-        } else {
-            $(".project-link").css("background-color", "#230254");
-        }
+        // if($("#projects-link").hasClass("section-link-on")){
+        //     $(".project-link").css("background-color", "#344666");
+        // } else {
+        //     $(".project-link").css("background-color", "#230254");
+        // }
     });
 
     $("#other-link").mouseenter(function(e) {
