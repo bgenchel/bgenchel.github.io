@@ -80,6 +80,7 @@ h1#topname {
 
 #social-media-bar {
     display: inline-block;
+    margin-bottom: 1em;
 }
 
 .social-media-button {
