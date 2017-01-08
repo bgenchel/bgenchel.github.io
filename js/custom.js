@@ -62,6 +62,11 @@ $(document).ready(function() {
         $("#project-links").css("display", "none");
     });
 
+    $(".section-link-buffer").mouseenter(function(e) {
+        $("#music-links").css("display", "none");
+        $("#project-links").css("display", "none");
+    });
+
     $("#section-menu").mouseleave(function(e) {
         $("#music-links").css("display", "none");
         $("#project-links").css("display", "none");

@@ -54,7 +54,7 @@ a:link {
 }
 
 #page-head {
-    padding-top: 20em;
+    padding-top: 12em;
     font-size: 18px;
     background: linear-gradient(
         rgba(0, 0, 0, 0.65), 
@@ -64,8 +64,9 @@ a:link {
     background-repeat: no-repeat;
 }
 
-#topline {
-    padding: 1em 2em 1em 2em;
+.topline {
+    padding: .5em 2em .5em 2em;
+    text-align: center;
 }
 
 h1#topname {
@@ -74,12 +75,11 @@ h1#topname {
     margin-bottom: 0;
     padding-top: 0;
     color: white;
-    font-size: 37pt;
+    font-size: 64pt;
 }
 
 #social-media-bar {
     display: inline-block;
-    float: right;
 }
 
 .social-media-button {
@@ -99,7 +99,7 @@ h1#topname {
 
 #navbar {
     background-color: black;
-    padding-left: 1em;
+    text-align: center;
 }
 
 .static-navbar {
@@ -318,6 +318,10 @@ input:focus, textarea:focus {
 }
 
 #other-link {
+    background-color: #3d3f4f;
+}
+
+#download-link {
     background-color: #3d3f4f;
 }
 
