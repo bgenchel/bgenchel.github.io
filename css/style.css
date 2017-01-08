@@ -102,6 +102,12 @@ h1#topname {
     padding-left: 1em;
 }
 
+.static-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
 .navbutton {
     display: inline-block;
     padding: 1em 1.5em 1em 1.5em;
