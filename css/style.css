@@ -134,6 +134,12 @@ h1#topname {
     text-align: center;
 }
 
+#page-descript {
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+}
+
 .portfolio-section {
     margin: 1em;
     overflow: auto;
