@@ -1,18 +1,4 @@
-
-$(document).ready(function() {
-    var static_nav_line = $("#navbar").position().top;
-
-    $(window).scroll(function(e) {
-        if($(window).scrollTop() >= static_nav_line){
-            $("#navbar").addClass("static-navbar");
-            $("#navbar-spacer").height($("#navbar").height());
-        }
-
-        if($(window).scrollTop() < static_nav_line){
-            $("#navbar").removeClass("static-navbar");
-            $("#navbar-spacer").height(0);
-        }
-
+// $(document).ready(function() {
     //     var musicDiv = $("#music");
     //     var projectsDiv = $("#projects");
     //     var otherDiv = $("#other");
@@ -46,30 +32,5 @@ $(document).ready(function() {
     //     } else {
     //         $(".project-link").css("background-color", "#230254");
     //     }
-    });
-
-    $("#music-link").mouseenter(function(e) {
-        $("#music-links").css("display", "inline-block");
-        $("#project-links").css("display", "none");
-    });
-
-    $("#projects-link").mouseenter(function(e) {
-        $("#music-links").css("display", "none");
-        $("#project-links").css("display", "inline-block");
-    });
-
-    $("#other-link").mouseenter(function(e) {
-        $("#project-links").css("display", "none");
-    });
-
-    $(".section-link-buffer").mouseenter(function(e) {
-        $("#music-links").css("display", "none");
-        $("#project-links").css("display", "none");
-    });
-
-    $("#section-menu").mouseleave(function(e) {
-        $("#music-links").css("display", "none");
-        $("#project-links").css("display", "none");
-    });
-});
-
+    // });
+// });
