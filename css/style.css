@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     line-height: 1.5;
     font-family: "Open Sans", sans-serif;
-    background-color: ghostwhite;
+    background-color: white;
 }
 
 div {
@@ -43,18 +43,26 @@ a:link {
 }
 
 #content-body {
+    /* margin: 0 auto; */
+    /* max-width: 70em; */
+    /* line-height: 2; */
+    /* padding: 0 1em 1em 1em; */
+    /* background-color: white; */
+    /* overflow: auto; */
+    /* min-height: 100%; */
+}
+
+#section-container {
     margin: 0 auto;
     max-width: 70em;
     line-height: 2;
     padding: 0 1em 1em 1em;
     background-color: white;
-    box-shadow: 0px 0px 5px #888888;
     overflow: auto;
     min-height: 100%;
 }
 
 #page-head {
-    padding-top: 12em;
     font-size: 18px;
     background: linear-gradient(
         rgba(0, 0, 0, 0.65), 
@@ -62,6 +70,16 @@ a:link {
         url('res/images/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+#landing-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .topline {
@@ -100,7 +118,41 @@ h1#topname {
 
 #navbar {
     background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+#navbar-branding {
+    color: white;
+    display: inline-block;
+    padding: 0.5em 1.5em 0.5em 0.7em;
     text-align: center;
+    vertical-align: middle;
+}
+
+#navbar-pic {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.7em;
+    padding-bottom: 0.3em;
+    vertical-align: middle;
+}
+
+#navbar-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#navbar-links {
+    display: inline;
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .static-navbar {
@@ -111,7 +163,7 @@ h1#topname {
 
 .navbutton {
     display: inline-block;
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 1.2em 1.5em 1.2em 1.5em;
     margin-right: -.3em;
     text-align: center;
     vertical-align: middle;
@@ -141,8 +193,13 @@ h1#topname {
 }
 
 .portfolio-section {
-    margin: 1em;
+    margin: 0 auto;
+    max-width: 70em;
+    line-height: 2;
+    padding: 0 1em 1em 1em;
+    background-color: white;
     overflow: auto;
+    min-height: 100%;
 }
 
 .half-column-1 {
@@ -157,12 +214,10 @@ h1#topname {
 }
 
 .section-title {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
     text-align: center;
     color: white;
-    box-shadow: 0px 0px 10px #888888;
 }
 
 .section-content {
