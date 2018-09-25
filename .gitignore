@@ -4,3 +4,5 @@
 .*.*.un~
 *.*.*.un~
 .*.*.*.un~
+
+res/carousel/*

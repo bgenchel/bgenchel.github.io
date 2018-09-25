@@ -76,10 +76,11 @@ a:link {
 
 #landing-content {
     position: absolute;
-    width: 100%;
+    width: 75%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .topline {
@@ -116,35 +117,39 @@ h1#topname {
     /* box-shadow: 0px 0px 10px white; */
 }
 
-#navbar {
+#mynavbar {
     background-color: black;
     width: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 3;
 }
 
-#navbar-branding {
+#mynavbar-branding {
     color: white;
     display: inline-block;
     padding: 0.5em 1.5em 0.5em 0.7em;
+    margin-left: 3em;
     text-align: center;
     vertical-align: middle;
 }
 
-#navbar-pic {
+#mynavbar-pic {
     display: inline-block;
     width: 2.5em;
-    height: 2.5em;
     margin-right: 0.7em;
-    padding-bottom: 0.3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border: 2px solid white;
+    background-color: cornflowerblue;
     vertical-align: middle;
 }
 
-#navbar-name {
+#mynavbar-name {
     display: inline-block;
     vertical-align: middle;
 }
 
-#navbar-links {
+#mynavbar-links {
     display: inline;
     position: absolute;
     vertical-align: middle;
@@ -155,29 +160,42 @@ h1#topname {
     padding-right: 1em;
 }
 
-.static-navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-}
+/* .mynavbar-static { */
+/*     width: 100%; */
+/*     position: fixed; */
+/*     top: 0; */
+/* } */
 
-.navbutton {
+.mynavbutton {
     display: inline-block;
-    padding: 1.2em 1.5em 1.2em 1.5em;
+    padding: 1.1em 1.5em 1.1em 1.5em;
     margin-right: -.3em;
     text-align: center;
     vertical-align: middle;
-    width: 5em;
     color: white;
 }
 
-.navbutton-selected {
+.mynavbutton-selected {
     background-color: #344666;
 }
 
-.navbutton:hover {
+.mynavbutton:hover {
    background-color: white;
    color: black;
+}
+
+.carousel-z {
+    z-index: 1;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #page-title {
