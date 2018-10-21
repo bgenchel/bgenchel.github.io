@@ -5,4 +5,6 @@
 *.*.*.un~
 .*.*.*.un~
 
-res/carousel/*
+.DS_Store
+*.log
+res/carousel/all/
