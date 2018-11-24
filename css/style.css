@@ -13,7 +13,7 @@ html, body {
 body {
     margin: 0 auto;
     line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Questrial", sans-serif;
     background-color: white;
 }
 
@@ -64,14 +64,9 @@ a:link {
 
 #page-head {
     font-size: 18px;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.65), 
-        rgba(0, 0, 0, 0.65)), 
-        url('res/images/header.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100%;
     position: relative;
+    background-color: black;
 }
 
 #landing-content {
@@ -95,6 +90,7 @@ h1#topname {
     padding-top: 0;
     color: white;
     font-size: 64pt;
+    text-shadow: 2px 2px #000000;
 }
 
 #social-media-bar {
@@ -153,11 +149,11 @@ h1#topname {
     display: inline;
     position: absolute;
     vertical-align: middle;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding-left: 1em;
     padding-right: 1em;
+    margin-right: 3em;
+    right: 0;
+    top: 0;
 }
 
 /* .mynavbar-static { */
@@ -168,6 +164,7 @@ h1#topname {
 
 .mynavbutton {
     display: inline-block;
+    width: 7em;
     padding: 1.1em 1.5em 1.1em 1.5em;
     margin-right: -.3em;
     text-align: center;

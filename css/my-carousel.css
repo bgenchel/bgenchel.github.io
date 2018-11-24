@@ -8,3 +8,21 @@
     background-image: url('../res/carousel/kumano-kodo-leo.jpg');
 }
 
+.carousel-control {
+    z-index: 2;
+}
+
+.carousel-item-bg {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.my-carousel-caption {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: lightgray;
+    text-shadow: 2px 2px #000000;
+}
