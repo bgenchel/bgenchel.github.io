@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Benjamin Genchel</title>
     <meta name="description" content="Personal Site/Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Benjamin Genchel</title>
+
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/my-carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
@@ -29,6 +34,9 @@
         <div id="landing-content">
             <div class="topline">
                 <h1 id="topname">Benjamin Genchel</h1>
+            </div>
+            <div class="topline" style="font-family: serif; font-size: 20px; color: white">
+                <p><i>Research ~ AI / ML ~ Software ~ Data Science ~ Music</i></p>
             </div>
             <div class="topline">
                 <div id="social-media-bar">
@@ -244,7 +252,7 @@
                     <div class="carousel-item-bg" style="background-image: 
                         url('res/carousel/final15/pi.jpg')"></div>
                     <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Country Side<br>Pai, Thailand</i></p>
+                        <p><i>Country Side<br>Pai, Thailand<br>2017</i></p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -286,18 +294,88 @@
             </a>
         </div>
     </div>
-    <div id="content-body">
-        <!-- <div width="100%" id="navbar-spacer"></div> -->
-        <div style="padding-top: 1em; pading-bottom: 1em;"></div>
-        <div id="page-title"><h1>About Me</h1></div>
-        <div id="about-me-container">
-            <div class="half-column-1">
-                <img class="self-picture" src="css/res/images/prof-pic.png">
-                <img class="self-picture" src="css/res/images/95JC-FrontPage.png">
-                <img class="self-picture" src="css/res/images/crater-lake-FrontPage.png">
+    <div id="page-title">
+        <h1 id="title">About Me</h1>
+        <!-- <p id="title">About Me</p> -->
+        <div class="parallax"></div>
+    </div>
+    <div class="container-fluid" style="width: 80%; margin-top: 50px;">
+        <div class="row">
+            <div class="col-6 my-auto">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="gallery-img">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/Alex_Graduation_2015.jpg" alt="UCSD_Grad">
+                                </a>
+                                <p class="lightbox-caption">Graduating from<br>UC San Diego</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox">
+                                    <img src="res/grid/Guitar_Guatemala.jpg" alt="Guitar">
+                                </a>
+                                <p class="lightbox-caption">Playing Guitar in Guatemala</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox">
+                                    <img src="res/grid/AS_Poster_Presentation.jpg" alt="AS_Poster">
+                                </a>
+                                <p class="lightbox-caption">With Dr. Yi-Hsuan Yang at the Conclusion of my Internship at
+                                The Music and Audio Computing (MAC) Lab in Taipei, Taiwan</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox">
+                                    <img src="res/grid/Jazz_Band_WI2015.jpg" alt="Jazz_Drumming">
+                                </a>
+                                <p class="lightbox-caption">Playing Drums in UC San Diego's Jazz Chamber Orchestra</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox">
+                                    <img src="res/grid/lambdas.jpg" alt="Lambdas">
+                                </a>
+                                <p class="lightbox-caption">Theta Tau Lambda Class after Completing a Quarter Long
+                                Program of My Own Design Focused on Building Engineering and Professional Skills</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="gallery-img">
+                                <a class="lightbox">
+                                    <img src="res/grid/AB_Stove2.jpg" alt="AB_Stove">
+                                </a>
+                                <p class="lightbox-caption">Building Stoves for Disadvantaged Mayan Families with
+                                Alternative Breaks - Highland Partners</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox">
+                                    <img src="res/grid/Me_Playing_Piano.jpg" alt="Piano">
+                                </a>
+                                <p class="lightbox-caption">Performing on Piano at a Theta Tau Formal</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/CleverPet_Conference_Rep.jpg" alt="CleverPet_Conference">
+                                </a>
+                                <p class="lightbox-caption">Representing CleverPet at an Investor Conference</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/Dumb_Face.jpg" alt="Dumb_Face">
+                                </a>
+                                <p class="lightbox-caption">Using Custom Hardware to Control Ableton Live</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/Music_Informatics_FA18.jpg" alt="MIR_Lab">
+                                </a>
+                                <p class="lightbox-caption">Photo with my Advisor and Colleagues, in the GTCMT Music Informatics Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="half-column-1">
-                <p style="margin-right: 5%">
+            <div class="col-6 my-auto">
+                <p style="line-height: 3;">
                 Hi! My name is Benjamin "Benjie" Genchel. I am a 24 year old
                 computer scientist, musician and general enthusiast of math, science,
                 art, and people from Southern California. I am always interested
@@ -337,13 +415,16 @@
             </div>
         </div>
     </div>
-    <div id="section-menu">
-        <div id="section-links">
-            <!-- <a id="download-links" href="res/resume.pdf" download="res/resume.pdf" class="section-link">Download</a> -->
-        </div>
+    <div id="footer">
+        <hr>
+        <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
-    <script src="js/main.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
+    <!-- <script> -->
+        <!-- baguetteBox.run('.tz-gallery'); -->
+    <!-- </script> -->
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -151,7 +151,6 @@ h1#topname {
     vertical-align: middle;
     padding-left: 1em;
     padding-right: 1em;
-    margin-right: 3em;
     right: 0;
     top: 0;
 }
@@ -181,25 +180,37 @@ h1#topname {
    color: black;
 }
 
-.carousel-z {
-    z-index: 1;
-}
-
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 #page-title {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    /* padding-top: 5em; */
+    /* padding-bottom: 5em; */
     text-align: center;
+    position: relative;
 }
+
+#page-title #title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+}
+
+#page-title .parallax {
+    background-image: url("../res/parallax_1.jpg");
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 20em;
+    z-index: -1;
+}
+
 
 #page-descript {
     margin-right: 25%;
@@ -434,3 +445,16 @@ input:focus, textarea:focus {
     color: black;
 }
 
+#footer {
+    width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#footer p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
