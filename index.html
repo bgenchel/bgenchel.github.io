@@ -12,33 +12,43 @@
     <link rel="stylesheet" href="css/my-carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
+    <link rel="stylesheet" href="css/sidenav.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
 </head>
 <body>
-    <div id="page-head">
-        <div id="mynavbar">
-            <div id="mynavbar-branding">
-                <img src="res/8bit-self.png" id="mynavbar-pic">
-                <span id="mynavbar-name">Benjamin Genchel</span>
-            </div>
-            <div id="mynavbar-links">
-                <a href="#"><div class="mynavbutton mynavbutton-selected">Home</div></a>
-                <div class="dropdown">
-                    <button class="mynavbutton dropbtn">Portfolio
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="portfolio.html">Projects</a>
-                        <a href="portfolio.html">Music</a>
-                        <a href="portfolio.html">Transcriptions</a>
-                    </div>
-                </div>
-                <a href="resume.html"><div class="mynavbutton">Resume</div></a>
-                <a href="contact.html"><div class="mynavbutton">Contact</div></a>
-            </div>
+    <div id="mynavbar">
+        <div id="mynavbar-branding">
+            <img src="res/8bit-self.png" id="mynavbar-pic">
+            <span id="mynavbar-name">Benjamin Genchel</span>
         </div>
+        <!-- <div id="mynavbar-links"> -->
+        <!--     <a href="#"><div class="mynavbutton mynavbutton-selected">Home</div></a> -->
+        <!--     <a href="projects.html"><div class="mynavbutton">Projects</div></a> -->
+        <!--     <a href="sounds.html"><div class="mynavbutton">Sounds</div></a> -->
+        <!--     <a href="sheets.html"><div class="mynavbutton">Sheets</div></a> -->
+        <!--     <a href="resume.html"><div class="mynavbutton">Resume</div></a> -->
+        <!--     <a href="contact.html"><div class="mynavbutton">Contact</div></a> -->
+        <!-- </div> -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+            <a class="mynavbutton" href="#">Home</a>
+            <a class="mynavbutton" href="projects.html">Projects</a>
+            <a class="mynavbutton" href="sounds.html">Sounds</a>
+            <a class="mynavbutton" href="sheets.html">Sheets</a>
+            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+            <a class="mynavbutton" href="#">Contact</a>
+        </div>
+
+        <div id="menubtn-bg-holder">
+            <span id="menubtn-bg">&#9776;   Menu</span>
+        </div>
+        <div id="mynavbar-links">
+            <span id="menubtn" onClick="openNav()">&#9776;   Menu</span>
+        </div>
+    </div>
+    <div id="page-head">
         <!-- <div width="100%" id="navbar-spacer"></div> -->
         <div id="landing-content">
             <div class="topline">
@@ -304,12 +314,13 @@
             </a>
         </div>
     </div>
+    <div id="breaker" style="height: 3em"></div>
     <div id="page-title">
         <h1 id="title">About Me</h1>
         <!-- <div id="title-frame"></div> -->
-        <div class="parallax"></div>
+        <div id="about-me" class="parallax"></div>
     </div>
-    <div class="container-fluid" style="width: 80%; margin-top: 50px;">
+    <div class="container-fluid" style="width: 95%; margin-top: 50px;">
         <div class="row">
             <div class="col-6 my-auto">
                 <div class="tz-gallery">
@@ -322,10 +333,10 @@
                                 <p class="lightbox-caption">Graduating from<br>UC San Diego</p>
                             </div>
                             <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/Guitar_Guatemala.jpg" alt="Guitar">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/Dumb_Face.jpg" alt="Dumb_Face">
                                 </a>
-                                <p class="lightbox-caption">Playing Guitar in Guatemala</p>
+                                <p class="lightbox-caption">Using Custom Hardware to Control Ableton Live</p>
                             </div>
                             <div class="gallery-img">
                                 <a class="lightbox">
@@ -350,17 +361,22 @@
                         </div>
                         <div class="col-sm-6 col-md-6">
                             <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/AB_Stove2.jpg" alt="AB_Stove">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/me_n_suzanne_ciani.jpg" alt="aaa">
                                 </a>
-                                <p class="lightbox-caption">Building Stoves for Disadvantaged Mayan Families with
-                                Alternative Breaks - Highland Partners</p>
+                                <p class="lightbox-caption">Photo with my Advisor and Colleagues in the GTCMT Music Informatics Group</p>
+                            </div>
+                            <div class="gallery-img">
+                                <a class="lightbox"> 
+                                    <img src="res/grid/Music_Informatics_WI18.jpg" alt="MIR_Lab">
+                                </a>
+                                <p class="lightbox-caption">Photo with my Advisor and Colleagues in the GTCMT Music Informatics Group</p>
                             </div>
                             <div class="gallery-img">
                                 <a class="lightbox">
                                     <img src="res/grid/Me_Playing_Piano.jpg" alt="Piano">
                                 </a>
-                                <p class="lightbox-caption">Performing on Piano at a Theta Tau Formal</p>
+                                <p class="lightbox-caption">Performing on Piano</p>
                             </div>
                             <div class="gallery-img">
                                 <a class="lightbox"> 
@@ -369,16 +385,11 @@
                                 <p class="lightbox-caption">Representing CleverPet at an Investor Conference</p>
                             </div>
                             <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/Dumb_Face.jpg" alt="Dumb_Face">
+                                <a class="lightbox">
+                                    <img src="res/grid/AB_Stove2.jpg" alt="AB_Stove">
                                 </a>
-                                <p class="lightbox-caption">Using Custom Hardware to Control Ableton Live</p>
-                            </div>
-                            <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/Music_Informatics_FA18.jpg" alt="MIR_Lab">
-                                </a>
-                                <p class="lightbox-caption">Photo with my Advisor and Colleagues, in the GTCMT Music Informatics Group</p>
+                                <p class="lightbox-caption">Building Stoves for Disadvantaged Mayan Families with
+                                Alternative Breaks - Highland Partners</p>
                             </div>
                         </div>
                     </div>
@@ -429,12 +440,13 @@
         <hr>
         <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
+    <script src="js/sidenav.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
     <!-- <script> -->
         <!-- baguetteBox.run('.tz-gallery'); -->
     <!-- </script> -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
 </body>
 </html>
