@@ -12,27 +12,35 @@
     <link rel="stylesheet" href="css/my-carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
+    <link rel="stylesheet" href="css/sidenav.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
 </head>
 <body>
-    <div>
-        <div id="mynavbar">
-            <div id="mynavbar-branding">
-                <img src="res/8bit-self.png" id="mynavbar-pic">
-                <span id="mynavbar-name">Benjamin Genchel</span>
-            </div>
-            <div id="mynavbar-links">
-                <a href="index.html"><div class="mynavbutton">Home</div></a>
-                <a href="projects.html"><div class="mynavbutton mynavbutton-selected">Projects</div></a>
-                <a href="music.html"><div class="mynavbutton">Sounds</div></a>
-                <a href="resume.html"><div class="mynavbutton">Resume</div></a>
-                <a href="contact.html"><div class="mynavbutton">Contact</div></a>
-            </div>
+    <div id="mynavbar">
+        <div id="mynavbar-branding">
+            <img src="res/8bit-self.png" id="mynavbar-pic">
+            <span id="mynavbar-name">Benjamin Genchel</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+            <a class="mynavbutton" href="index.html">Home</a>
+            <a class="mynavbutton" href="#">Projects</a>
+            <a class="mynavbutton" href="sounds.html">Sounds</a>
+            <a class="mynavbutton" href="sheets.html">Sheets</a>
+            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+            <a class="mynavbutton" href="contact.html">Contact</a>
+        </div>
+
+        <div id="menubtn-bg-holder">
+            <span id="menubtn-bg">&#9776;   Menu</span>
+        </div>
+        <div id="mynavbar-links">
+            <span id="menubtn" onClick="openNav()">&#9776;   Menu</span>
         </div>
     </div>
-    <div id="breaker", style="height: 3em"></div>
+    <div id="breaker" style="height: 4em"></div>
     <div id="page-title">
         <h1 id="title">Projects</h1>
         <!-- <div id="title-frame"></div> -->
@@ -56,6 +64,7 @@
         <hr>
         <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
+    <script src="js/sidenav.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->

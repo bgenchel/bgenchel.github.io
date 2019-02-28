@@ -2,63 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Personal Site/Music">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Benjamin Genchel</title>
-    <meta name="description" content="Personal Site/Portfolio">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/my-carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
 </head>
-
 <body>
-    <div id="page-head">
-        <div class="topline">
-            <h1 id="topname"> Benjamin H. Genchel </h1>
+    <div id="mynavbar">
+        <div id="mynavbar-branding">
+            <img src="res/8bit-self.png" id="mynavbar-pic">
+            <span id="mynavbar-name">Benjamin Genchel</span>
         </div>
-        <div class="topline">
-            <div id="social-media-bar">
-                <a href="http://github.com/bgenchel">
-                    <img class="social-media-button" src="css/res/icons/github.svg"></a>
-                </a>
-                <a href="http://linkedin.com/in/benjamingenchel">
-                    <img class="social-media-button" src="css/res/icons/linkedin.svg">
-                </a>
-                <a href="http://soundcloud.com/in/bgenchel">
-                    <img class="social-media-button" src="css/res/icons/soundcloud.svg">
-                </a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+            <a class="mynavbutton" href="index.html">Home</a>
+            <a class="mynavbutton" href="projects.html">Projects</a>
+            <a class="mynavbutton" href="sounds.html">Sounds</a>
+            <a class="mynavbutton" href="sheets.html">Sheets</a>
+            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+            <a class="mynavbutton" href="contact.html">Contact</a>
+        </div>
+
+        <div id="menubtn-bg-holder">
+            <span id="menubtn-bg">&#9776;   Menu</span>
+        </div>
+        <div id="mynavbar-links">
+            <span id="menubtn" onClick="openNav()">&#9776;   Menu</span>
+        </div>
+    </div>
+    <div style="height: 4em"></div>
+    <div id="page-title">
+        <h1 id="title">Contact Me</h1>
+        <!-- <div id="title-frame"></div> -->
+        <div id="contact" class="parallax"></div>
+    </div>
+    <div class="container-fluid" style="width: 95%; margin-top: 2em;">
+        <div class="row item-row">
+            <div class="col-12" style="padding-left: 20%; padding-right: 20%">
+                <div id="page-descript">
+                    <p>
+                        Feel free to reach out via the form below<br>or any of the social media links on this site.
+                        <br><br>
+                        Thanks for visiting!
+                    </p>
+                </div>
+                <form id="contact-form" action="https://formspree.io/benjiegenchel@gmail.com" method="POST">
+                    <input class="contact-form-field" type="text" name="name" placeholder="Name*" required>
+                    <input class="contact-form-field" type="email" name="email" placeholder="Email*" required>
+                    <textarea class="contact-form-field" rows="15" type="text" name="message"
+                        placeholder="Message*" required></textarea>
+                    <input id="contact-form-submit" type="submit" value="Send">
+                </form>
             </div>
         </div>
-        <div id="navbar">
-            <a href="index.html"><div class="navbutton">Home</div></a>
-            <a href="portfolio.html"><div class="navbutton">Portfolio</div></a>
-            <a href="resume.html"><div class="navbutton">Resume</div></a>
-            <a href="#"><div class="navbutton navbutton-selected">Contact</div></a>
-        </div>
-        <div width="100%" id="navbar-spacer"></div>
     </div>
-    <div id="content-body">
-        <div style="padding-top: 1em; pading-bottom: 1em;"></div>
-        <div id="page-title"><h1>Contact Me</h1></div>
-        <div id="page-descript"><h4>
-            Feel free to reach out through any of the social media platforms above,
-            through email (benjiegenchel@gmail.com), or through the form below!
-        </h4></div>
-        <span style="width: 50%; margin: 0 auto;">
-        </span>
-        <form id="contact-form" action="https://formspree.io/benjiegenchel@gmail.com" method="POST">
-            <input class="contact-form-field" type="text" name="name" placeholder="Name*" required>
-            <input class="contact-form-field" type="email" name="email" placeholder="Email*" required>
-            <textarea class="contact-form-field" rows="15" type="text" name="message"
-                placeholder="Message*" required></textarea>
-            <input id="contact-form-submit" type="submit" value="Send">
-        </form>
-        <div style="padding-top: 1em; pading-bottom: 1em;"></div>
+    <div id="footer">
+        <hr>
+        <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
-    <div id="section-menu">
-        <!-- <div id="section-links"> -->
-            <!-- <a id="design-link" href="#design" class="section-link">Design</a> -->
-        <!-- </div> -->
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/sidenav.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
+    <!-- <script> -->
+        <!-- baguetteBox.run('.tz-gallery'); -->
+    <!-- </script> -->
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
-

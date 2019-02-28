@@ -352,9 +352,29 @@ h1#topname {
 #page-title #projects.parallax {
     background-image: url("../res/projects.jpg");
     background-position: bottom;
-    height: 22em;
+    height: 30em;
 }
 
+#page-title #sounds.parallax {
+    background-image: url("../res/sounds2.png");
+    background-color: black;
+    background-position: center;
+    height: 30em;
+}
+
+#page-title #sheets.parallax {
+    background-image: url("../res/sheets.png");
+    background-color: #bbbbbb;
+    background-position: center;
+    height: 30em;
+}
+
+#page-title #contact.parallax {
+    background-image: url("../res/contact.jpg");
+    background-color: black;
+    background-position: bottom;
+    height: 30em;
+}
 
 #page-descript {
     margin-right: 25%;
@@ -464,6 +484,7 @@ h1#topname {
     margin: 0 auto;
     margin-top: 3em;
     font-family: "Open Sans", sans-serif;
+    transition: 0.2s;
 }
 
 .contact-form-field {
@@ -477,6 +498,7 @@ h1#topname {
     font-size: 11pt;
     padding: 10px;
     border: 1px #cccccc solid;
+    transition: 0.2s;
 }
 
 .contact-form-field:focus {
@@ -499,12 +521,14 @@ input:focus, textarea:focus {
     font-size: 15pt;
     color: white;
     border: none;
+    transition: 0.2s;
 }
 
 #contact-form-submit:hover, #contact-form-submit:focus {
     background-color: white;
     color: black;
     border: 1px black solid;
+    transition: 0.2s;
 }
 
 #section-links {
@@ -587,6 +611,102 @@ input:focus, textarea:focus {
 .song-link:hover, .project-link:hover {
     background-color: white!important;
     color: black;
+}
+
+.subsection-header {
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: #444444;
+}
+
+.subsection-header.sheet-ssh{
+    background-color: #999999;
+}
+
+.subsection-header .parallax {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.subsection-header #title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    text-shadow: 2px 2px #000000;
+}
+
+#production-subsection.parallax{
+    background-image: url("../res/ableton-bg.jpg");
+    background-position: center;
+    height: 10em;
+}
+
+#live-subsection.parallax{
+    background-image: url("../res/95jc-wi15-3.jpg");
+    background-position: center -30em;
+    height: 10em;
+}
+
+#composition-subsection.parallax{
+    background-image: url("../res/original_comp-1.png");
+    background-position: center;
+    height: 10em;
+}
+
+#transcription-subsection.parallax{
+    background-image: url("../res/transcription-1.png");
+    background-position: center;
+    height: 10em;
+}
+
+.item-title {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.item-row {
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+blockquote {
+    color: #666;
+    background: none;
+    border-left: .2rem solid #d3d3d3;
+    display: block;
+    padding: 20px 20px 10px 45px;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 60px;
+    position: relative;
+    left: -50px;
+    top: -30px;
+    height: 0;
+    color: #7a7a7a;
+}
+
+.sheet_music {
+    border: 2px solid black;
 }
 
 #footer {

@@ -49,7 +49,8 @@
 }
 
 .tz-gallery {
-    padding: 0px 40px 40px 40px;
+    /* padding: 0px 40px 40px 40px; */
+    padding: 1em 1em 1em 1em;
 }
 
 .tz-gallery .lightbox img {
