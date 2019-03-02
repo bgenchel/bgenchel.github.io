@@ -659,7 +659,7 @@ input:focus, textarea:focus {
 }
 
 #composition-subsection.parallax{
-    background-image: url("../res/original_comp-1.png");
+    background-image: url("../res/transcription-1.png");
     background-position: center;
     height: 10em;
 }
