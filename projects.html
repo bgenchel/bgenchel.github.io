@@ -8,11 +8,11 @@
     <title>Benjamin Genchel</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/my-carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
     <link rel="stylesheet" href="css/sidenav.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
@@ -31,13 +31,24 @@
             <a class="mynavbutton" href="sheets.html">Sheets</a>
             <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
             <a class="mynavbutton" href="contact.html">Contact</a>
+            <div class="sn-sml-holder">
+                <a class="sn-sml" href="http://soundcloud.com/bgenchel">
+                    <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
+                </a>
+                <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
+                    <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
+                </a>
+                <a class="sn-sml" href="http://github.com/bgenchel">
+                    <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
+                </a>
+            </div>
         </div>
 
         <div id="menubtn-bg-holder">
             <span id="menubtn-bg">&#9776;   Menu</span>
         </div>
         <div id="mynavbar-links">
-            <span id="menubtn" onClick="openNav()">&#9776;   Menu</span>
+            <span id="menubtn" class="nl-menubtn" onClick="openNav()">&#9776;   Menu</span>
         </div>
     </div>
     <div style="height: 4em"></div>
@@ -110,6 +121,7 @@
                document posted here.
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6">
                 <div class="item-title">
@@ -163,6 +175,7 @@
                 </div>
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto;">
                 <div class="tz-gallery">
@@ -204,6 +217,7 @@
                     of this study in the near future.
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6">
                 <div class="item-title"><h3>PyPadberg (2018)</h3></div>
@@ -268,6 +282,7 @@
                 </p>
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto;">
             </div>
@@ -277,6 +292,7 @@
                     Description coming soon!
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto;">
                 <div class="item-title"><h3>Sound Happening (2018)</h3></div>
@@ -303,6 +319,7 @@
                     allowfullscreen></iframe>
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto; text-align: center;">
                 <iframe src="https://open.spotify.com/embed/track/4Y8r1jX0Ei9G3Ky7cYt7ep" width="300" height="380" 
@@ -331,6 +348,7 @@
                     <a href="https://github.com/bgenchel/Evolving-Towards-Green-Sleeves">here</a>
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto;">
                 <div class="item-title"><h3>Breadboard MIDI Controller (2018)</h3></div>
@@ -361,6 +379,7 @@
                     allowfullscreen></iframe>
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto;">
                 <div class="tz-gallery">
@@ -391,6 +410,7 @@
                 creativity and music generation through the process.
             </div>
         </div>
+        <hr>
         <div class="row item-row">
             <div class="col-6" style="margin: auto;">
                 <div class="item-title"><h3>.dotfiles (2016 - )</h3></div>
@@ -423,6 +443,7 @@
                 </p>
             </div>
         </div>
+        <hr>
         <div class="row item-row" style="padding-left: 20%; padding-right: 20%;">
             <div class="item-title" style="width: 100%"><h3>Web Development (2014 - )</h3></div>
             <p>
@@ -444,16 +465,10 @@
         </div>
     </div>
     <div id="footer">
-        <hr>
         <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
     <script src="js/sidenav.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
-    <!-- <script> -->
-        <!-- baguetteBox.run('.tz-gallery'); -->
-    <!-- </script> -->
-    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -107,13 +107,59 @@ h1#topname {
     display: inline-block;
     border: 2px solid transparent;
     transition: 0.2s;
-    /* box-shadow: 0px 0px 10px transparent; */
 }
 
 .social-media-button:hover {
     border: 2px solid white;
     transition: 0.2s;
     /* box-shadow: 0px 0px 10px white; */
+}
+
+/* nav-bar social media button */
+.sn-smb {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.sn-smb:hover {
+    transition: 0.3s;
+}
+
+#smb-soundcloud.sn-smb:hover {
+    border: 3px solid sandybrown;
+}
+
+#smb-linkedin.sn-smb:hover {
+    border: 3px solid skyblue;
+}
+
+#smb-github.sn-smb:hover {
+    border: 3px solid darkgrey;
+}
+
+.sn-sml {
+    display: inline-block !important;
+    padding: 0 !important;
+}
+
+.sn-sml-holder {
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.smb-link {
+    display: inline-block;
 }
 
 #mynavbar {
@@ -173,7 +219,7 @@ h1#topname {
     padding: 1.1em 1.5em 1.1em 1.5em;
     margin-right: -.3em;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     color: white;
     transition: 0.2s;
     height: 100%;
@@ -209,20 +255,28 @@ h1#topname {
     height: 100%;
 }
 
+/* non landing page menu button */
+.nl-menubtn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
 .mynavbutton {
     display: inline-block;
     padding: 1.1em 1.5em 1.1em 1.5em;
     text-align: center;
     vertical-align: middle;
     color: black;
-    transition: 0.01s;
+    transition: 0.1s;
+    width: 250px;
 }
 
 .mynavbutton:hover {
    background-color: black;
    color: white;
    /* text-shadow: 2px 2px #000000; */
-   transition: 0.01s;
+   transition: 0.1s;
 }
 
 .mynavbutton-selected {
@@ -710,13 +764,17 @@ blockquote:before {
 }
 
 #footer {
-    width: 95%;
+    /* width: 95%; */
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 #footer p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
