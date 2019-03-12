@@ -84,6 +84,12 @@ a:link {
     text-shadow: 2px 2px #000000;
 }
 
+#topline-text {
+    font-size: 15pt;
+    font-family: serif;
+    color: white;
+}
+
 h1#topname {
     display: inline-block;
     margin-top: 0;
@@ -93,6 +99,11 @@ h1#topname {
     font-size: 64pt;
     text-shadow: 2px 2px #000000;
 }
+
+.mobile-br {
+    display: none;
+}
+
 
 #social-media-bar {
     display: inline-block;
@@ -301,59 +312,6 @@ h1#topname {
   text-decoration: none;
 }
 
-/* The dropdown container */
-/* .dropdown { */
-  /* float: left; */
-  /* overflow: hidden; */
-/* } */
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 #page-title {
     text-align: center;
     position: relative;
@@ -370,7 +328,6 @@ h1#topname {
     width: 40%;
     height: 12em;
     background-color: cornflowerblue;
-    /* border: 5px solid white; */
     opacity: 0.5;
 }
 
@@ -430,33 +387,6 @@ h1#topname {
     height: 30em;
 }
 
-#page-descript {
-    margin-right: 25%;
-    margin-left: 25%;
-    text-align: center;
-}
-
-.portfolio-section {
-    margin: 0 auto;
-    max-width: 70em;
-    line-height: 2;
-    padding: 0 1em 1em 1em;
-    background-color: white;
-    overflow: auto;
-    min-height: 100%;
-}
-
-.half-column-1 {
-    width: 49%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.half-column-2 {
-    width: 50%;
-    display: inline-block;
-}
-
 .section-title {
     padding-top: 5em;
     padding-bottom: 5em;
@@ -488,6 +418,15 @@ h1#topname {
     text-align: center;
 }
 
+.subsection-container {
+    width: 95%;
+    margin-top: 2em;
+}
+
+.projects-report {
+    width: 60% !important;
+}
+
 .portfolio-item {
     margin: 2em 1em 2em 1em;
     padding: 2.5em;
@@ -503,41 +442,11 @@ h1#topname {
     bottom: 0;
 }
 
-.project-title {
-    margin-top: 0;
-    text-align: center;
-    font-size: 2em;
-}
-
-
-.caption {
-    font-size: 11px;
-    padding-left: 13em;
-    padding-right: 13em;
-}
-
-.project-body {
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-.project-media {
-    margin-top: 4em;
-    margin-bottom:4em;
-    text-align: center;
-}
-
-#resume {
-    height: 1200px;
-    vertical-align: middle;
-}
-
 #contact-form {
     width: 60%;
     text-align: center;
     margin: 0 auto;
     margin-top: 3em;
-    font-family: "Open Sans", sans-serif;
     transition: 0.2s;
 }
 
@@ -557,11 +466,6 @@ h1#topname {
 
 .contact-form-field:focus {
     border: 1px black solid;
-}
-
-
-input, textarea {
-    font-family: "Open Sans", sans-serif;
 }
 
 input:focus, textarea:focus {
@@ -662,6 +566,12 @@ input:focus, textarea:focus {
     color: white;
 }
 
+
+.no-viz-col {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .song-link:hover, .project-link:hover {
     background-color: white!important;
     color: black;
@@ -734,6 +644,24 @@ input:focus, textarea:focus {
     margin-top: 3em;
 }
 
+.item-col {
+    margin: auto;
+}
+
+.sheets-item-col {
+    padding: 3em;
+    margin: auto;
+}
+
+.soundcloud-frame {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+hr {
+    border-color: darkgrey;
+}
+
 blockquote {
     color: #666;
     background: none;
@@ -763,6 +691,12 @@ blockquote:before {
     border: 2px solid black;
 }
 
+#page-descript {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
 #footer {
     /* width: 95%; */
     padding-right: 15px;
@@ -777,4 +711,89 @@ blockquote:before {
 #footer p {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        line-height: 2;
+    }
+
+    #mynavbar-branding {
+        margin-left: 0.5em;
+    }
+
+    #mynavbar-links {
+        padding: 0;
+    }
+
+    #menubtn-bg-holder {
+        padding: 0;
+    }
+    
+    h1#topname {
+        font-size: 37pt;
+    }
+
+    #topline-text {
+        font-size: 13pt;
+    }
+
+    .mobile-br {
+        display: block;
+    }
+
+    .tilde {
+        display: none;
+    }
+
+    #bio, #gallery {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .subsection-container {
+        width: 85%;
+    }
+
+    .item-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sheets-item-col {
+        padding: 0;
+    }
+
+    .projects-report {
+        width: 100% !important;
+    }
+
+    .no-viz-col {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #page-descript {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #contact-form {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Questrial",  sans-serif;
+        transition: 0.2s;
+    }
+
+    .youtube-vid {
+        width: 100%;
+    }
+
+    .topline {
+        padding: 0;
+    }
+
+    #footer {
+        font-size: 10pt;
+    }
 }

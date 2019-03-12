@@ -23,32 +23,31 @@
             <img src="res/8bit-self.png" id="mynavbar-pic">
             <span id="mynavbar-name">Benjamin Genchel</span>
         </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
-            <a class="mynavbutton" href="index.html">Home</a>
-            <a class="mynavbutton" href="#">Projects</a>
-            <a class="mynavbutton" href="sounds.html">Sounds</a>
-            <a class="mynavbutton" href="sheets.html">Sheets</a>
-            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
-            <a class="mynavbutton" href="contact.html">Contact</a>
-            <div class="sn-sml-holder">
-                <a class="sn-sml" href="http://soundcloud.com/bgenchel">
-                    <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
-                </a>
-                <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
-                    <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
-                </a>
-                <a class="sn-sml" href="http://github.com/bgenchel">
-                    <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
-                </a>
-            </div>
-        </div>
-
         <div id="menubtn-bg-holder">
             <span id="menubtn-bg">&#9776;   Menu</span>
         </div>
         <div id="mynavbar-links">
             <span id="menubtn" class="nl-menubtn" onClick="openNav()">&#9776;   Menu</span>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+        <a class="mynavbutton" href="index.html">Home</a>
+        <a class="mynavbutton" href="#">Projects</a>
+        <a class="mynavbutton" href="sounds.html">Sounds</a>
+        <a class="mynavbutton" href="sheets.html">Sheets</a>
+        <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+        <a class="mynavbutton" href="contact.html">Contact</a>
+        <div class="sn-sml-holder">
+            <a class="sn-sml" href="http://soundcloud.com/bgenchel">
+                <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
+            </a>
+            <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
+                <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
+            </a>
+            <a class="sn-sml" href="http://github.com/bgenchel">
+                <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
+            </a>
         </div>
     </div>
     <div style="height: 4em"></div>
@@ -57,19 +56,19 @@
         <!-- <div id="title-frame"></div> -->
         <div id="projects" class="parallax"></div>
     </div>
-    <div class="container-fluid" style="width: 95%; margin-top: 2em;">
+    <div class="container-fluid subsection-container">
         <div class="row item-row">
-            <div class="col-6", style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="tz-gallery">
                     <div class="gallery-img">
                         <a class="lightbox" href="res/DRL_4MG_MidtermReport.pdf" download> 
-                            <img src="res/DRL_4MG.jpg" alt="DRL_4MG" style="width: 60%;" class="sheet_music">
+                            <img class="projects-report sheet_music" src="res/DRL_4MG.jpg" alt="DRL_4MG">
                         </a>
                         <p class="lightbox-caption">Click to Download (7 Pages)</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title">
                     <h3>Exploring Deep Reinforcement Learning<br>
                         for Symbolic Music Generation<br>(2018 - )</h3>
@@ -123,7 +122,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title">
                     <h3>Explicitly Conditioniong Melody Generation:<br>
                         A Case Study with Interdependent RNNs<br>(2018 - 2019)</h3>
@@ -157,9 +156,9 @@
                      the effects of explicit conditioning factors to the 2019 
                     <a href="http://musicalmetacreation.org/">Musical Metacreation Workshop</a>.
             </div>
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="tz-gallery">
-                    <div class="gallery-img">
+                    <div class="gallery-img" style="padding: 5%;">
                         <a class="lightbox"> 
                             <img src="res/min_model.jpg" alt="min_model" style="width: 100%;">
                         </a>
@@ -177,17 +176,17 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="tz-gallery">
                     <div class="gallery-img">
                         <a class="lightbox" href="res/mpc_report.pdf" download> 
-                            <img src="res/mpc_report.jpg" alt="mpc_report" style="width: 60%;" class="sheet_music">
+                            <img class="projects-report sheet_music" src="res/mpc_report.jpg" alt="mpc_report">
                         </a>
                         <p class="lightbox-caption">Click to Download (11 Pages)</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>What Makes Machine Music Machine Like? (2018)</h3></div>
                 <blockquote><p>
                     &nbsp;&nbsp;&nbsp;&nbsp;Can humans truly tell the difference between music composed by humans and music generated by a 
@@ -219,7 +218,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>PyPadberg (2018)</h3></div>
                 <p>
                     In 1964, Harriet Padberg completed the first dissertation on algorithmic composition using a
@@ -244,7 +243,7 @@
                     Status of Woman of the Society for Music Theory at the 2019 Society for Music Theory meeting.
                     
             </div>
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -284,9 +283,9 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
             </div>
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Musical Painting Arm (2018 - )</h3></div>
                 <p>
                     Description coming soon!
@@ -294,7 +293,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Sound Happening (2018)</h3></div>
                 <p> Sound Happening is an ongoing interactive musical installation project housed by the 
                 <a href="https://expressivemachinery.gatech.edu/">Expressive Machinery Lab</a> at Georgia Tech. Its
@@ -310,22 +309,22 @@
                 A video explaining the concept of Sound Happening (made prior to our work), as well as a video showing 
                 our progress are presented here.
             </div>
-            <div class="col-6" style="margin: auto;">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8sUmnQvu7bQ"
+            <div class="col-6 item-col" style="text-align: center;">
+                <iframe class="youtube-vid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8sUmnQvu7bQ"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VqLmMAHYCBc"
+                <iframe class="youtube-vid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/VqLmMAHYCBc"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto; text-align: center;">
+            <div class="col-6 item-col" style="text-align: center;">
                 <iframe src="https://open.spotify.com/embed/track/4Y8r1jX0Ei9G3Ky7cYt7ep" width="300" height="380" 
                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>           
             </div>
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Evolving Towards Green Sleeves (2018)</h3></div>
                 <p>
                     Evolving Towards Green Sleeves is a computer music composition which sonifies the process of a
@@ -350,7 +349,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Breadboard MIDI Controller (2018)</h3></div>
                 <p>
                     This device is a custom built MIDI controller using a wide range of sensors and inputs over four
@@ -370,28 +369,28 @@
                     store and launch loops created with the controller).
                 </p>
             </div>
-            <div class="col-6" style="margin: auto;">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TAraRy9DHk4"
+            <div class="col-6 item-col" style="text-align: center;">
+                <iframe class="youtube-vid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/TAraRy9DHk4"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qJmrfS5dx8o"
+                <iframe class="youtube-vid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/qJmrfS5dx8o"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="tz-gallery">
                     <div class="gallery-img">
                         <a class="lightbox" href="res/2017proposal.pdf" download> 
-                            <img src="res/2017proposal.jpg" alt="proposal" style="width: 60%;" class="sheet_music">
+                            <img class="projects-report sheet_music" src="res/2017proposal.jpg" alt="proposal">
                         </a>
                         <p class="lightbox-caption">Click to Download (23 Pages)</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>NSF Grant Proposal:<br>A Novel Deep Learning Model for Musical Creativity (2017)</h3></div>
                 <p>
                 This grant proposal was written by my colleagues <a href="https://richardyang40148.github.io/">Li-Chia
@@ -412,7 +411,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>.dotfiles (2016 - )</h3></div>
                 I am a huge fan of the terminal. My workflow for any software project, and even some writing
                 assignments, uses TMUX, Vim, and a ton of plugins. I also use zsh as my shell, with Oh-My-Zsh as my
@@ -427,9 +426,9 @@
                 <br><br>
                 <a href="https://github.com/bgenchel/.dotfiles.git">Check out my .dotfiles!</a>
             </div>
-            <div class="col-6" style="margin: auto;">
+            <div class="col-6 item-col">
                 <div class="tz-gallery">
-                    <div class="gallery-img">
+                    <div class="gallery-img" style="padding: 5%;">
                         <a class="lightbox"> 
                             <img src="res/dotfiles.png" alt="terminal">
                         </a>
@@ -444,8 +443,8 @@
             </div>
         </div>
         <hr>
-        <div class="row item-row" style="padding-left: 20%; padding-right: 20%;">
-            <div class="item-title" style="width: 100%"><h3>Web Development (2014 - )</h3></div>
+        <div class="row item-row no-viz-col">
+            <div class="item-title" style="width: 100%"><h3>Web Development<br class="mobile-br">(2014 - )</h3></div>
             <p>
                 In 2013, I volunteered to take on the position of Webmaster for my professional engineering
                 fraternity, Theta Tau. Though an Electrical Engineering major, I knew I had a knack for coding from

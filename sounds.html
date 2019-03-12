@@ -23,32 +23,31 @@
             <img src="res/8bit-self.png" id="mynavbar-pic">
             <span id="mynavbar-name">Benjamin Genchel</span>
         </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
-            <a class="mynavbutton" href="index.html">Home</a>
-            <a class="mynavbutton" href="projects.html">Projects</a>
-            <a class="mynavbutton" href="#">Sounds</a>
-            <a class="mynavbutton" href="sheets.html">Sheets</a>
-            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
-            <a class="mynavbutton" href="contact.html">Contact</a>
-            <div class="sn-sml-holder">
-                <a class="sn-sml" href="http://soundcloud.com/bgenchel">
-                    <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
-                </a>
-                <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
-                    <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
-                </a>
-                <a class="sn-sml" href="http://github.com/bgenchel">
-                    <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
-                </a>
-            </div>
-        </div>
-
         <div id="menubtn-bg-holder">
             <span id="menubtn-bg">&#9776;   Menu</span>
         </div>
         <div id="mynavbar-links">
             <span id="menubtn" class="nl-menubtn" onClick="openNav()">&#9776;   Menu</span>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+        <a class="mynavbutton" href="index.html">Home</a>
+        <a class="mynavbutton" href="projects.html">Projects</a>
+        <a class="mynavbutton" href="#">Sounds</a>
+        <a class="mynavbutton" href="sheets.html">Sheets</a>
+        <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+        <a class="mynavbutton" href="contact.html">Contact</a>
+        <div class="sn-sml-holder">
+            <a class="sn-sml" href="http://soundcloud.com/bgenchel">
+                <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
+            </a>
+            <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
+                <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
+            </a>
+            <a class="sn-sml" href="http://github.com/bgenchel">
+                <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
+            </a>
         </div>
     </div>
     <div style="height: 4em"></div>
@@ -63,13 +62,13 @@
         <!-- <div id="title-frame"></div> -->
         <div id="production-subsection" class="parallax"></div>
     </div>
-    <div class="container-fluid" style="width: 95%; margin-top: 2em;">
+    <div class="container-fluid subsection-container">
         <div class="row item-row">
-            <div class="col-6", style="margin: auto;">
-               <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            <div class="col-6 item-col">
+               <iframe class="soundcloud-frame" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/718064223%3Fsecret_token%3Ds-VoIHN&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe> 
             </div>
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Student Debt Simulator 2100 OST (2018)</h3></div>
                 <p>
                     Student Debt Simulator 2100 is a game by <a href="https://twitter.com/yaygamedev">Sean Fisher</a>, 
@@ -97,7 +96,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Trouble on Beryl Isle OST (2018)</h3></div>
                 <p>
                 Trouble on Beryl Isle is a game by <a href="http://sflanagan33.github.io/">Sean Flanagan</a>, 
@@ -125,14 +124,14 @@
                     <a href="https://vgdev.gtorg.gatech.edu/game/trouble-on-beryl-isle/">Play the game!</a>
                 </p>
             </div>
-            <div class="col-6" style="margin: auto;">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            <div class="col-6 item-col">
+                <iframe class="soundcloud-frame" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/572805912&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-12" style="padding-left: 20%; padding-right: 20%">
+            <div class="col-12 no-vis-col"> 
                 <div class="item-title"><h3>Pink Pointed Toed Shoes (2018)</h3></div>
                 <p>
                 Pink Pointed Toed Shoes is a recorded autobiographical story written and performed by Cheryl Cofield for
@@ -162,11 +161,11 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            <div class="col-6 item-col">
+                <iframe class="soundcloud-frame" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/496408413&color=%231c3444&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3> Space Walk (2018)</h3></div>
                 <p>
                  I composed and produced this short piece while interning in Taiwan during the summer of 2018. Though I
@@ -193,7 +192,7 @@
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3>Beats with Goodnight Cody (2016)</h3></div>
                 <p>
                     These two are short pieces I developed while briefly taking Ableton Live production lessons with 
@@ -203,18 +202,18 @@
                     unusual harmony, 8-bit like sounds, and an emphasis on percussive rhythm.
                 </p>
             </div>
-            <div class="col-6" style="margin: auto;">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            <div class="col-6 item-col">
+                <iframe class="soundcloud-frame" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/718485123&color=%236f89ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
         </div>
         <hr>
         <div class="row item-row">
-            <div class="col-6" style="margin: auto;">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            <div class="col-6 item-col">
+                <iframe class="soundcloud-frame" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252045619&color=%23289fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
-            <div class="col-6">
+            <div class="col-6 item-col">
                 <div class="item-title"><h3> Beginning (2016)</h3></div>
                 <p>
                 A short piece written and produced as part of a beat cypher for UC San Diego's 
@@ -232,10 +231,10 @@
         <h2 id="title">Live Performance Recordings</h2>
         <div id="live-subsection" class="parallax"></div>
     </div>
-    <div class="container-fluid" style="width: 95%; margin-top: 2em;">
+    <div class="container-fluid subsection-container">
         <div class="row item-row">
-            <div class="col-6">
-                <div class="item-title"><h3>UCSD 95JC Live Recordings (2011 - 2015)</h3></div>
+            <div class="col-6 item-col">
+                <div class="item-title"><h3>UCSD 95JC<br class="mobile-br">Live Recordings<br class="mobile-br">(2011 - 2015)</h3></div>
                 <p>
                     All songs in this playlist were recorded live at UCSD for the 95JC Class (Jazz Chamber Orchestra)
                     during my time as a drummer there. I feel Fly With The Wind,
@@ -248,8 +247,8 @@
                     mine, and another example of combining electronics with Jazz.
                 </p>
             </div>
-            <div class="col-6" style="margin: auto;">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            <div class="col-6 item-col">
+                <iframe class="soundcloud-frame" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/563740098&color=%239c7c24&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
         </div>

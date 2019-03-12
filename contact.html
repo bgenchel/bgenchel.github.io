@@ -23,32 +23,31 @@
             <img src="res/8bit-self.png" id="mynavbar-pic">
             <span id="mynavbar-name">Benjamin Genchel</span>
         </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
-            <a class="mynavbutton" href="index.html">Home</a>
-            <a class="mynavbutton" href="projects.html">Projects</a>
-            <a class="mynavbutton" href="sounds.html">Sounds</a>
-            <a class="mynavbutton" href="sheets.html">Sheets</a>
-            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
-            <a class="mynavbutton" href="contact.html">Contact</a>
-            <div class="sn-sml-holder">
-                <a class="sn-sml" href="http://soundcloud.com/bgenchel">
-                    <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
-                </a>
-                <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
-                    <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
-                </a>
-                <a class="sn-sml" href="http://github.com/bgenchel">
-                    <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
-                </a>
-            </div>
-        </div>
-
         <div id="menubtn-bg-holder">
             <span id="menubtn-bg">&#9776;   Menu</span>
         </div>
         <div id="mynavbar-links">
             <span id="menubtn" class="nl-menubtn" onClick="openNav()">&#9776;   Menu</span>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+        <a class="mynavbutton" href="index.html">Home</a>
+        <a class="mynavbutton" href="projects.html">Projects</a>
+        <a class="mynavbutton" href="sounds.html">Sounds</a>
+        <a class="mynavbutton" href="sheets.html">Sheets</a>
+        <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+        <a class="mynavbutton" href="contact.html">Contact</a>
+        <div class="sn-sml-holder">
+            <a class="sn-sml" href="http://soundcloud.com/bgenchel">
+                <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
+            </a>
+            <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
+                <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
+            </a>
+            <a class="sn-sml" href="http://github.com/bgenchel">
+                <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
+            </a>
         </div>
     </div>
     <div style="height: 4em"></div>
@@ -57,9 +56,9 @@
         <!-- <div id="title-frame"></div> -->
         <div id="contact" class="parallax"></div>
     </div>
-    <div class="container-fluid" style="width: 95%; margin-top: 2em;">
+    <div class="container-fluid subsection-container"> 
         <div class="row item-row">
-            <div class="col-12" style="padding-left: 20%; padding-right: 20%">
+            <div class="col-12 no-viz-col">
                 <div id="page-descript">
                     <p>
                         Feel free to reach out via the form below<br>or any of the social media links on this site.
@@ -78,16 +77,10 @@
         </div>
     </div>
     <div id="footer">
-        <hr>
         <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
     <script src="js/sidenav.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
-    <!-- <script> -->
-        <!-- baguetteBox.run('.tz-gallery'); -->
-    <!-- </script> -->
-    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -23,26 +23,6 @@
             <img src="res/8bit-self.png" id="mynavbar-pic">
             <span id="mynavbar-name">Benjamin Genchel</span>
         </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
-            <a class="mynavbutton" href="#">Home</a>
-            <a class="mynavbutton" href="projects.html">Projects</a>
-            <a class="mynavbutton" href="sounds.html">Sounds</a>
-            <a class="mynavbutton" href="sheets.html">Sheets</a>
-            <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
-            <a class="mynavbutton" href="contact.html">Contact</a>
-            <div class="sn-sml-holder">
-                <a class="sn-sml" href="http://soundcloud.com/bgenchel">
-                    <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
-                </a>
-                <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
-                    <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
-                </a>
-                <a class="sn-sml" href="http://github.com/bgenchel">
-                    <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
-                </a>
-            </div>
-        </div>
 
         <div id="menubtn-bg-holder">
             <span id="menubtn-bg">&#9776;   Menu</span>
@@ -51,15 +31,44 @@
             <span id="menubtn" onClick="openNav()">&#9776;   Menu</span>
         </div>
     </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
+        <a class="mynavbutton" href="#">Home</a>
+        <a class="mynavbutton" href="projects.html">Projects</a>
+        <a class="mynavbutton" href="sounds.html">Sounds</a>
+        <a class="mynavbutton" href="sheets.html">Sheets</a>
+        <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+        <a class="mynavbutton" href="contact.html">Contact</a>
+        <div class="sn-sml-holder">
+            <a class="sn-sml" href="http://soundcloud.com/bgenchel">
+                <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
+            </a>
+            <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
+                <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
+            </a>
+            <a class="sn-sml" href="http://github.com/bgenchel">
+                <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
+            </a>
+        </div>
+    </div>
     <div id="page-head">
         <!-- <div width="100%" id="navbar-spacer"></div> -->
         <div id="landing-content">
             <div class="topline">
                 <h1 id="topname">Benjamin Genchel</h1>
             </div>
-            <div class="topline" style="font-family: serif; font-size: 20px; color: white">
-                <p><i>Research ~ AI / ML ~ Software ~ Data Science</i></p>
-                <p><i>Music Composition ~ Music Production ~ Sound Design</i></p>
+            <div id="topline-text" class="topline">
+                <p><i>
+                    Research <br class="mobile-br"><span class="tilde"> ~ </span>
+                    AI / ML<br class="mobile-br"><span class="tilde"> ~ </span>
+                    Software<br class="mobile-br"><span class="tilde"> ~ </span>
+                    Data Science<br class="mobile-br">
+                </i></p>
+                <p><i>
+                    Music Composition<br class="mobile-br"><span class="tilde"> ~ </span>
+                    Music Production<br class="mobile-br"><span class="tilde"> ~ </span>
+                    Sound Design
+                </i></p>
             </div>
             <div class="topline">
                 <div id="social-media-bar">
@@ -323,9 +332,9 @@
         <!-- <div id="title-frame"></div> -->
         <div id="about-me" class="parallax"></div>
     </div>
-    <div class="container-fluid" style="width: 95%; margin-top: 50px;">
+    <div class="container-fluid subsection-container">
         <div class="row">
-            <div class="col-6 align-top" style="padding: 2em;">
+            <div id="bio" class="col-6 align-top" style="padding: 2em;">
                 <p style="line-height: 2;">
                 Welcome to my personal site! I am Benjamin "Benjie" Genchel, a musician / engineer / researcher / composer / 
                 data scientist / technologist originally from Los Angeles, California. I love to create and think
@@ -374,7 +383,7 @@
                 <br><br>
                 </p>
             </div>
-            <div class="col-6 align-top">
+            <div id="gallery" class="col-6 align-top">
                 <div class="tz-gallery">
                     <div class="row">
                         <div class="col-sm-6 col-md-6" style="padding: 1em;">
@@ -453,16 +462,11 @@
         </div>
     </div>
     <div id="footer">
-        <hr>
         <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
     </div>
     <script src="js/sidenav.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script> -->
-    <!-- <script> -->
-        <!-- baguetteBox.run('.tz-gallery'); -->
-    <!-- </script> -->
     <script src="js/main.js"></script>
 </body>
 </html>
