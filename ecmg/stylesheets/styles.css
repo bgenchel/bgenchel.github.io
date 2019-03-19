@@ -175,6 +175,10 @@ section {
   padding-bottom: 50px;
 }
 
+section p {
+  font-size: 12pt;
+}
+
 small {
   font-size:11px;
 }
@@ -215,14 +219,18 @@ footer {
 }
 
 #view-this-project {
-    margin-top: 20px;
-    padding: 1em 0 1em 0;
+    margin-top: 18px;
 }
 
-#github-icon {
+.more-links {
+    padding: 0.3em 0 0.3em 0;
+    font-size: 9pt;
+}
+
+.icon-link {
     display: inline-block;
-    margin-right: 10px;
-    font-size: 25pt;
+    margin-right: 5px;
+    font-size: 15pt;
     vertical-align: middle;
 }
 
