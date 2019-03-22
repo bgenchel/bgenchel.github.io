@@ -90,6 +90,10 @@ a:link {
     color: white;
 }
 
+#go-down-arrow {
+    color: white;
+}
+
 h1#topname {
     display: inline-block;
     margin-top: 0;
