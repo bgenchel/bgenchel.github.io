@@ -245,6 +245,26 @@ footer {
     margin-right: 1em;
 }
 
+.caption {    
+    font-size: 10.5pt;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+th {
+    font-weight: normal;
+}
+
+tr:nth-child(1) th {
+  font-weight: bold;
+  background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+  font-weight: normal;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
