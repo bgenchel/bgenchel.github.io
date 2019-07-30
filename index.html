@@ -18,41 +18,8 @@
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
 </head>
 <body>
-    <div id="mynavbar">
-        <div id="mynavbar-branding">
-            <img src="res/8bit-self.png" id="mynavbar-pic">
-            <span id="mynavbar-name">Benjamin Genchel</span>
-        </div>
-
-        <div id="menubtn-bg-holder">
-            <span id="menubtn-bg">&#9776;   Menu</span>
-        </div>
-        <div id="mynavbar-links">
-            <span id="menubtn" onClick="openNav()">&#9776;   Menu</span>
-        </div>
-    </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times</a>
-        <a class="mynavbutton" href="#">Home</a>
-        <a class="mynavbutton" href="projects.html">Projects</a>
-        <a class="mynavbutton" href="sounds.html">Sounds</a>
-        <a class="mynavbutton" href="sheets.html">Sheets</a>
-        <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
-        <a class="mynavbutton" href="contact.html">Contact</a>
-        <div class="sn-sml-holder">
-            <a class="sn-sml" href="http://soundcloud.com/bgenchel">
-                <img id="smb-soundcloud" class="sn-smb" src="css/res/icons/soundcloud.svg">
-            </a>
-            <a class="sn-sml"href="http://linkedin.com/in/benjamingenchel">
-                <img id="smb-linkedin" class="sn-smb" src="css/res/icons/linkedin.svg">
-            </a>
-            <a class="sn-sml" href="http://github.com/bgenchel">
-                <img id="smb-github" class="sn-smb" src="css/res/icons/github.svg"></a>
-            </a>
-        </div>
-    </div>
+    <nav id="mynavbar"></nav>
     <div id="page-head">
-        <!-- <div width="100%" id="navbar-spacer"></div> -->
         <div id="landing-content">
             <div class="topline">
                 <h1 id="topname">Benjamin Genchel</h1>
@@ -71,253 +38,15 @@
                 </i></p>
             </div>
             <div class="topline">
-                <div id="social-media-bar">
-                    <a href="http://soundcloud.com/bhgoti">
-                        <img class="social-media-button" src="css/res/icons/soundcloud.svg">
-                    </a>
-                    <a href="http://linkedin.com/in/benjamingenchel">
-                        <img class="social-media-button" src="css/res/icons/linkedin.svg">
-                    </a>
-                    <a href="http://github.com/bgenchel">
-                        <img class="social-media-button" src="css/res/icons/github.svg"></a>
-                    </a>
-                </div>
-            </div>
-            <div class="topline">
-                <a href="#breaker"><span id="go-down-arrow">V</span></a>
+                <a href="#">
+                    <img id="go-down-arrow" src="res/images/down-arrow.svg">
+                </a>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide carousel-z" data-ride="carousel">
-            <ol class="carousel-indicators carousel-control"> 
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="21"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="22"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="23"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="24"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="25"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="26"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="27"></li>
+            <ol id="slideshow-indicators" class="carousel-indicators carousel-control"> 
             </ol>
-            <div class="carousel-inner" role="listbox">
-                <!-- <div id="overlay"></div> -->
-                <div id="carousel-1" class="carousel-item carousel-image active">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/9-floating-fountains.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Nine Floating Fountains<br>Osaka, Japan<br>2017</i></p>
-                    </div>
-                </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item"> 
-                    <div class="carousel-item-bg" style="background-image:
-                        url('res/carousel/final15/ankhor-wat-tree.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Ta Prohm<br>Angkor, Siem Reap Province, Cambodia<br>2017</i></p>
-                    </div>
-                </div>
-                <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/asheville-river.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>French Broad River<br>Asheville, North Carolina, U.S.A.<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/atlanta-viewer.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>SkyView Observatory - Wynn Hotel<br>Atlanta, Georgia, U.S.A.<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/chang-mai-night-market.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Old City Night Market<br>Chiang Mai, Thailand<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/changmai-old-village-2.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Hmong Hill Tribe Village<br>Chiang Mai, Thailand<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/digilog.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>DigiLog Sound Lab<br>Zhongzheng District, Taipei City, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/france-graffiti-trash.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Empty Lot<br>Montmartre, Paris, France<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item"> 
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/gonguan-sunset.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Gonguan Sunset<br>Zhongzheng District, Taipei City, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item"> 
-                    <div class="carousel-item-bg" style="background-image: 
-                    url('res/carousel/final15/gt-snow-bench.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Bench in the Snow - Georgia Tech<br>Atlanta, Georgia, U.S.A.<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/ha-giang-bright-green.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Grassy Plains<br>Ha Giang Province, Vietnam<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/ha-giang-rocks.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Rocky Hillside<br>Ha Giang Province, Vietnam<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/hanoi-fisherman.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Fishing at Thong Nhat Park<br>Hanoi, Vietnam<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/hualien-japan-village.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Lintienshan Forestry Culture Park<br>Hualien, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/huayin-st.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Huayin Street<br>Taipei City, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                    url('res/carousel/final15/dazhi-bridge.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Dazhi Bridge<br>Taipei City, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                    url('res/carousel/final15/jiufan-rooftop.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Jiufen<br>Ruifang District, New Taipei City, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/kho-phi-phi.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Phi Phi Viewpoint<br>Koh Phi Phi, Thailand<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/kumano-kodo-leo.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Kumano Kodo<br>Tanabe, Wakayama Prefecture, Japan<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/mom-victory-trailhead.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Victory Trailhead<br>Los Angeles County, California, U.S.A.<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/national-peace-park.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Chinese Pavillion - 228 Peace Memorial Park<br>Zhongzheng District, Taipei, Taiwan<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/pi-purple-flowers.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Water Ball<br>Thung Yao, Pai, Thailand<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item"> 
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/pi-god.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Light Through The Clouds<br>Pai Canyon, Pai, Thailand<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/pi.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Country Side<br>Pai, Thailand<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/pompidou.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Centre Pompidou<br>Paris, France<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/sainte-chapelle.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Sainte-Chapelle<br>Paris, France<br>2018</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/shirihama_2.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Clifftop View<br>Shirahama, Wakayama Prefecture, Japan<br>2017</i></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-item-bg" style="background-image: 
-                        url('res/carousel/final15/tahoe-lake.jpg')"></div>
-                    <div class="carousel-caption d-none d-md-block my-carousel-caption">
-                        <p><i>Emerald Bay Dock<br>Lake Tahoe, California, U.S.A.<br>2017</i></p>
-                    </div>
-                </div>
+            <div id="slideshow-images" class="carousel-inner" role="listbox">
             </div>
             <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -329,134 +58,96 @@
             </a>
         </div>
     </div>
-    <div id="breaker" style="height: 3em"></div>
-    <div id="page-title">
-        <h1 id="title">About Me</h1>
-        <!-- <div id="title-frame"></div> -->
-        <div id="about-me" class="parallax"></div>
-    </div>
-    <div class="container-fluid subsection-container">
-        <div class="row">
-            <div id="bio" class="col-6 align-top" style="padding: 2em;">
-                <p style="line-height: 2;">
-                Welcome to my personal site! I am Benjamin "Benjie" Genchel, a musician / engineer / researcher / composer / 
-                data scientist / technologist originally from Los Angeles, California. I love to create and think
-                creatively. I love to make things, whether its songs, programs, or hardware. I am interested in using
-                machine learning and computational creativity research to gain a greater understanding of music, musical
-                creativity and creativity in general. I am also interested in using this research to aid in the creation
-                ion or enhancement of novel, artistic performances and experiences. I enjoy composing music, and developing interactive,
-                musical hardware, installations and tools. 
-                <br><br> 
-                I am currently completing the final semester of my M.S. in Music Technology at the Georgia Institute of
-                Technology, which I have attended since 2017. I conduct deep learning based symbolic music generation research 
-                as part of the Music Informatics group under Dr. Alexander Lerch, and work on GrooveMachine, a physical musical sequencer
-                installation as a Graduate Research Assistant in the Expressive Machinery lab under Dr. Jason Freeman,
-                Dr. Brian Magerko, and Dr. Astrid Bin among a variety of other projects. Head to the 
-                <a href="projects.html">Projects</a> page or to my <a href="https://github.com/bgenchel">Github</a> 
-                for more information. 
-                <br><br>
-                In 2015, I completed my B.S. in Electrical Engineering at UC San Diego, with focuses in machine learning and
-                computer science and a minor in mathematics. While at UC San Diego, I played Drum Set in Jazz Chamber
-                Orchestra under Kamau Kenyatta, performed service work in the highlands of Guatemala as part of
-                Alternative Breaks, and accepted an invitation to join Eta Kappa Nu electrical and computer engineering
-                honor society. I was also heavily involved as a member of the Theta Tau professional engineering
-                fraternity, where I served as webmaster and pledge instructor.
-                <br><br> 
-                I have been performing and playing drum set for over 12 years, and self learning guitar and piano for around the same
-                amount of time. Upon arrival in Atlanta, I began taking Jazz Piano lessons as a means of both satisying
-                a personal desire (I love jazz piano), learning more about melody and harmony (knowledge not afforded by
-                percussion) and supplementing my graduate education.
-                <br><br>
-                I have been sporadically composing and producing music in Ableton Live since 2010, a practice which has
-                taken on increasing importance to me. During my time at Georgia Tech, I have contributed music and sound effects 
-                to a number of student developed games, scored recorded stories for the <a href="https://sdie.gatech.edu/transformative-narratives">
-                    Transformative Narratives</a> project, and composed music to accompany school projects.
-                <br><br>
-                My other interests include animation, sustainability (I have been mostly vegan since 2015), rock
-                climbing, travel and photography. The latter two of these is combined in this page's header. 
-                <br><br>
-                </p>
-                <p style="font-size: .8rem; line-height: 2">
-                <i>For those unfamiliar, the Music Technology program at Georgia Tech is a highly technical interdisciplinary program which 
-                explores the intersection of music, computer science, engineering, cognitive science, and artificial intelligence 
-                with the purpose of, <a href="http://www.gtcmt.gatech.edu/">"[transforming] the ways we create
-                and experience music, and [creating] the next generation of technology for composition, performance,
-                consumption, and education."</a> For better or worse, it is not an audio engineering program, despite common
-            misconception.</i>
-                <br><br>
-                </p>
+    <div id="page-content">
+        <div id="breaker" class="breaker"></div>
+        <div id="page-title">
+            <h1 class="title">About Me</h1>
+            <div id="about-me" class="parallax"></div>
+        </div>
+        <div class="subsection-container">
+            <div class="d-flex flex-row">
+                <div class="align-top mx-auto margin">
+                    <p id="bio" style="line-height: 2;">
+                    </p>
+                </div>
             </div>
-            <div id="gallery" class="col-6 align-top">
+            <div id="gallery" class="align-top">
                 <div class="tz-gallery">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6" style="padding: 1em;">
-                            <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/Alex_Graduation_2015.jpg" alt="UCSD_Grad">
-                                </a>
-                                <p class="lightbox-caption">Graduating from<br>UC San Diego in 2015</p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6" style="padding: 1em;">
+                                <div class="gallery-img">
+                                    <a class="lightbox"> 
+                                        <img src="res/images/grid/Alex_Graduation_2015.jpg" alt="UCSD_Grad">
+                                    </a>
+                                    <p class="lightbox-caption">Graduating from<br>UC San Diego in 2015</p>
+                                </div>
+                                <div class="gallery-img">
+                                    <a class="lightbox"> 
+                                        <img src="res/images/grid/Dumb_Face.jpg" alt="Dumb_Face">
+                                    </a>
+                                    <p class="lightbox-caption">Using Custom Hardware to Control Ableton Live</p>
+                                </div>
                             </div>
-                            <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/Dumb_Face.jpg" alt="Dumb_Face">
-                                </a>
-                                <p class="lightbox-caption">Using Custom Hardware to Control Ableton Live</p>
+                            <div class="col-lg-3 col-md-6 col-sm-6" style="padding: 1em;">
+                                <div class="gallery-img">
+                                    <a class="lightbox">
+                                        <img src="res/images/grid/sinica.jpg" alt="sinica">
+                                    </a>
+                                    <p class="lightbox-caption">With Dr. Yi-Hsuan Yang at the Conclusion of my Internship at
+                                    The Music and Audio Computing (MAC) Lab in Taipei, Taiwan</p>
+                                </div>
+                                <div class="gallery-img">
+                                    <a class="lightbox">
+                                        <img src="res/images/grid/Jazz_Band_WI2015.jpg" alt="Jazz_Drumming">
+                                    </a>
+                                    <p class="lightbox-caption">Playing Drums in UC San Diego's Jazz Chamber Orchestra</p>
+                                </div>
+                                <div class="gallery-img">
+                                    <a class="lightbox">
+                                        <img src="res/images/grid/lambdas.jpg" alt="Lambdas">
+                                    </a>
+                                    <p class="lightbox-caption">Theta Tau Lambda Class, which I led and instructed, graduating from their 
+                                    4 month long pledge program.</p>
+                                </div>
                             </div>
-                            <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/sinica.jpg" alt="sinica">
-                                </a>
-                                <p class="lightbox-caption">With Dr. Yi-Hsuan Yang at the Conclusion of my Internship at
-                                The Music and Audio Computing (MAC) Lab in Taipei, Taiwan</p>
+                            <div class="col-lg-3 col-md-6 col-sm-6" style="padding: 1em;">
+                                <div class="gallery-img">
+                                    <a class="lightbox"> 
+                                        <img src="res/images/grid/me_n_suzanne_ciani.jpg" alt="suzanne">
+                                    </a>
+                                    <p class="lightbox-caption">Suzanne Ciani and I discussing hardware and software at the
+                                    2018 Guthman Musical Instrument Competition.
+                                    </p>
+                                </div>
+                                <div class="gallery-img">
+                                    <a class="lightbox"> 
+                                        <img src="res/images/grid/Music_Informatics_WI18.jpg" alt="MIR_Lab">
+                                    </a>
+                                    <p class="lightbox-caption">Photo with my Advisor and Colleagues in the GTCMT Music
+                                    Informatics Group.</p>
+                                </div>
+                                <div class="gallery-img">
+                                    <a class="lightbox">
+                                        <img src="res/images/grid/Me_Playing_Piano.jpg" alt="Piano">
+                                    </a>
+                                    <p class="lightbox-caption">Performing on Piano at the 2014 Theta Tau Formal.</p>
+                                </div>
                             </div>
-                            <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/Jazz_Band_WI2015.jpg" alt="Jazz_Drumming">
-                                </a>
-                                <p class="lightbox-caption">Playing Drums in UC San Diego's Jazz Chamber Orchestra</p>
-                            </div>
-                            <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/lambdas.jpg" alt="Lambdas">
-                                </a>
-                                <p class="lightbox-caption">Theta Tau Lambda Class, which I led and instructed, graduating from their 
-                                4 month long pledge program.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6" style="padding: 1em;">
-                            <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/me_n_suzanne_ciani.jpg" alt="suzanne">
-                                </a>
-                                <p class="lightbox-caption">Suzanne Ciani and I discussing hardware and software at the
-                                2018 Guthman Musical Instrument Competition.
-                                </p>
-                            </div>
-                            <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/Music_Informatics_WI18.jpg" alt="MIR_Lab">
-                                </a>
-                                <p class="lightbox-caption">Photo with my Advisor and Colleagues in the GTCMT Music
-                                Informatics Group.</p>
-                            </div>
-                            <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/Me_Playing_Piano.jpg" alt="Piano">
-                                </a>
-                                <p class="lightbox-caption">Performing on Piano at the 2014 Theta Tau Formal.</p>
-                            </div>
-                            <div class="gallery-img">
-                                <a class="lightbox"> 
-                                    <img src="res/grid/CleverPet_Conference_Rep.jpg" alt="CleverPet_Conference">
-                                </a>
-                                <p class="lightbox-caption">Representing CleverPet at an Investor Conference</p>
-                            </div>
-                            <div class="gallery-img">
-                                <a class="lightbox">
-                                    <img src="res/grid/AB_Stove2.jpg" alt="AB_Stove">
-                                </a>
-                                <p class="lightbox-caption">Building Stoves for Disadvantaged Mayan Families with
-                                Alternative Breaks - Highland Partners</p>
+                            <div class="col-lg-3 col-md-6 col-sm-6" style="padding: 1em;">
+                                <div class="gallery-img">
+                                    <a class="lightbox"> 
+                                        <img src="res/images/grid/CleverPet_Conference_Rep.jpg" alt="CleverPet_Conference">
+                                    </a>
+                                    <p class="lightbox-caption">Representing CleverPet at an Investor Conference</p>
+                                </div>
+                                <div class="gallery-img">
+                                    <a class="lightbox">
+                                        <img src="res/images/grid/AB_Stove2.jpg" alt="AB_Stove">
+                                    </a>
+                                    <p class="lightbox-caption">Building Stoves for Disadvantaged Mayan Families with
+                                    Alternative Breaks - Highland Partners</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -464,12 +155,12 @@
             </div>
         </div>
     </div>
-    <div id="footer">
-        <p>Created with Bootstrap / JQuery | © Benjamin Genchel</p>
-    </div>
-    <script src="js/sidenav.js"></script>
+    <div id="footer"></div>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/data/index-data.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 </html>
