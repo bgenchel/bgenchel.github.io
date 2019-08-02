@@ -1,0 +1,244 @@
+@media only screen and (max-width: 769px){
+    body {
+        line-height: 2;
+    }
+
+    #menubtn-bg-holder {
+        padding: 0;
+    }
+    
+    h1#topname {
+        font-size: 37pt;
+    }
+
+    #topline-text {
+        font-size: 13pt;
+    }
+
+    .mobile-br {
+        display: block;
+    }
+
+    .tilde {
+        display: none;
+    }
+
+    #bio, #gallery {
+        padding: 5%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .subsection-container {
+        width: 90%;
+    }
+
+    .item-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sheets-item-col {
+        padding: 0;
+    }
+
+    .projects-report {
+        width: 100% !important;
+    }
+
+    #page-descript {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #contact-form {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Questrial",  sans-serif;
+        transition: 0.2s;
+    }
+
+    .media-holder, .proj-left-col .media-holder {
+        margin: auto;
+    }
+
+    .document-holder::after {
+        transform: translate(-50%, -50%);
+    }
+
+    .caption {
+        margin: 1rem auto;
+    }
+
+    .proj-left-col {
+        margin-bottom: 3rem;
+    }
+
+    .youtube-vid {
+        width: 100%;
+    }
+
+    .topline {
+        padding: 0;
+    }
+
+    #footer {
+        font-size: 10pt;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    #mynavbar-pic {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.1rem 0.1rem 0.1rem 0.05rem;
+    }
+
+    #mynavbar-name {
+        font-size: 1rem;
+    }
+
+    #mynavbar-name::after {
+        content: "B.G.";
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .sn-smb {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .navbar-sm-icon {
+        padding: 0.6rem 0.2rem;
+    }
+
+    #menubtn-holder {
+        padding: 0 0.6rem;
+    }
+
+    #menubtn {
+        font-size: 1rem;
+    }
+
+    #topline-text {
+        font-size: 11pt;
+        margin-bottom: 2rem;
+    }
+
+    #go-down-arrow {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+        padding: 0.8rem;
+    }
+
+    .subsection-header .title {
+        font-size: 2rem;
+    }
+
+    /* #page-title .parallax { */
+    /*     height: 8rem; */
+    /* } */
+
+    .parallax {
+        height: 9rem;
+    }
+
+    #page-title .parallax {
+        height: 25rem;
+    }
+
+    #page-title .title {
+        font-size: 2.5rem;
+    }
+
+    .item-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .item-col {
+        padding: 0 7.5%;
+    }
+
+    .media-holder {
+        width: 100%;
+    }
+
+    .caption {
+        font-size: 0.75rem;
+        width: 85%;
+        margin-top: 2rem;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    #page-descript {
+        text-align: left;
+    }
+    
+    .tz-gallery {
+        padding: 0;
+    }
+
+    #footer {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media only screen and (max-width: 370px) {
+    #mynavbar-name::after {
+        content: "";
+        display: none;
+    }
+
+    .navbar-brand {
+        padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+        margin-right: 0;
+    }
+
+    .sn-smb {
+        margin: 0 1px;
+    }
+
+    #menubtn {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-height: 630px) {
+
+    h1#topname {
+        font-size: 30pt;
+        margin-bottom: 1rem;
+    }
+
+    #topline-text {
+        font-size: 10pt;
+        margin-bottom: 1rem;
+    }
+
+    #go-down-arrow {
+        max-width: 2.25rem;
+        max-height: 2.25rem;
+    }
+
+    .sidenav .closebtn {
+        font-size: 24pt;
+        margin-bottom: 0;
+    }
+
+    .sidenav a {
+        font-size: 13pt;
+        padding: 0.8rem;
+    }
+}
