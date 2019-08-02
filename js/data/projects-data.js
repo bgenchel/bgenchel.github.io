@@ -15,6 +15,7 @@ let DATA = {
                     of problems which bridge engineering with an understanding of our own learning processes. What does 
                     it mean to communicate musically? What does it mean to be creative in a musical fashion? How does 
                     musical learning happen? What types of processing and memory are involved in music learning, and how can we model it?`,
+
                     `Learning heirarchical long term structure appears key to moving these systems, and thus our
                     understanding of these questions, forward. For my Masters Project at GTCMT, I chose to apply 
                     Deep Reinforcement Learning (DRL) to music generation due to its recent success in learning long term
@@ -22,8 +23,10 @@ let DATA = {
                     task which provides sparse rewards (you don't know whether a musical phrase is good just from
                     hearing a single note &mdash; you have to hear the whole thing), and a task which contains multiple
                     heirarchical levels of structure.`,
+
                     `Alpha Zero, Google DeepMind's extraordinary DRL system that mastered multiple games, has also
                     been described as playing in a creative fashion.`,
+
                     `</p><blockquote><p>
                         “Impressively, it manages to impose its style of play across a very wide range of positions and 
                         openings,” says Matthew [Sadler], who also observes that it plays in a very deliberate style from its 
@@ -36,11 +39,13 @@ let DATA = {
                         <a href="https://deepmind.com/blog/alphazero-shedding-new-light-grand-games-chess-shogi-and-go/">
                             DeepMind, AlphaZero: Shedding New Light ...</a>
                     </p></blockquote><p>`,
+
                     `DRL has been scarcely applied to music due to its abstract and subjective nature; how can you provide
                     reward a system for making good music when what makes music good is so unclear? However, I still believe
                     there is a lot of promise in this approach, especially with the development of techniques such as adversarial
                     learning, curiosity and inverse reinforcement learning, each of which allows models to learn reward
                     functions in different ways.`,
+
                     `This project does not cover all I am interested in exploring with respect to DRL, but represents a first step into
                     the field for me. It aims to combines two previous sequence generation approaches which use DRL, 
                     <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/viewPaper/14344">SeqGAN</a> and <a
@@ -50,7 +55,7 @@ let DATA = {
                 "media": {
                     "type": "document",
                     "items": ["res/images/projects/DRL_4MG.jpg"],
-                    "download": null,
+                    "download": "res/docs/projects/DRL_4MG_MidtermReport.pdf",
                     "caption": null
                 }
             },

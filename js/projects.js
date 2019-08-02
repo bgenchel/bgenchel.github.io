@@ -93,7 +93,7 @@ $(document).ready(function() {
             for (var i in item["media"]["items"]) {
                 pcMedia.append(`
                     <div class="media-holder">
-                        <iframe class="youtube-vid" width="504" height="283.5" src="${item["media"]["items"][i]}"
+                        <iframe class="youtube-vid" width="100%" height="283.5" src="${item["media"]["items"][i]}"
                             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -106,7 +106,7 @@ $(document).ready(function() {
             for (var i in item["media"]["items"]) {
                 pcMedia.append(`
                     <div class="media-holder">
-                        <iframe src="${item["media"]["items"][i]}" width="504" height="283.5" 
+                        <iframe src="${item["media"]["items"][i]}" width="100%" height="283.5" 
                             frameborder="0" allowtransparency="true" allow="encrypted-media">
                         </iframe>           
                     </div>

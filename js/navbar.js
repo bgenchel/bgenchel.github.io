@@ -4,7 +4,7 @@ navbar.addClass("navbar navbar-expand navbar-expand-lg");
 navbar.html(`
     <a class="navbar-brand" href="#">
         <img src="res/images/8bit-self.png" id="mynavbar-pic">
-        <span id="mynavbar-name">Benjamin Genchel</span>
+        <span id="mynavbar-name"></span>
     </a>
     <div class="navbar-nav ml-auto">
         <div class="navbar-holder">
@@ -31,7 +31,7 @@ navbar.after(`
         <a class="mynavbutton" href="projects.html">Projects</a>
         <a class="mynavbutton" href="sounds.html">Sounds</a>
         <a class="mynavbutton" href="sheets.html">Sheets</a>
-        <a class="mynavbutton" href="res/Benjamin_Genchel_Resume.pdf" download>Resume</a>
+        <a class="mynavbutton" href="res/docs/BenjaminGenchel_Resume.pdf" download>Resume</a>
         <a class="mynavbutton" href="contact.html">Contact</a>
     </div>
 `);

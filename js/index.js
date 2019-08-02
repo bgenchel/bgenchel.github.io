@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var navbar = $("#mynavbar");
     var navbarName = $("#mynavbar-name");
+    // var navbarName = $(".navbar-brand::after");
     var page_head = $("#page-head");
     // var menubtn_bg = $("#menubtn-bg");
 

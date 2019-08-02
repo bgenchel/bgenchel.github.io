@@ -26,6 +26,18 @@ var injectData = function (section, sectionName, item, idx) {
     let pcMedia = $(`#${sectionName}-${idx}-content-media`);
     let mediaType = item["media"]["type"];
 
+    if (mediaType === "document") {
+        for (var i in item["media"]["items"]) {
+            pcMedia.append(`
+                <div class="media-holder document-holder">
+                    <a href="${item["media"]["download"]}" download>
+                        <img class="document" src="${item["media"]["items"][i]}" alt="">
+                    </a>
+                </div>
+            `);
+        }
+    }
+
     if (mediaType == "soundcloud") {
         for (var i in item["media"]["items"]) {
             pcMedia.append(`
@@ -64,13 +76,13 @@ var injectData = function (section, sectionName, item, idx) {
 }
 
 $(document).ready(function() {
-    let production = $("#production");
-    DATA["production"]["items"].forEach(function(item, idx) {
-        injectData(production, "production", item, idx);
+    let originals = $("#originals");
+    DATA["originals"]["items"].forEach(function(item, idx) {
+        injectData(originals, "originals", item, idx);
     });
 
-    let live = $("#live");
-    DATA["livePerformance"]["items"].forEach(function(item, idx) {
-        injectData(live, "live", item, idx);
+    let transcriptions = $("#transcriptions");
+    DATA["transcriptions"]["items"].forEach(function(item, idx) {
+        injectData(transcriptions, "transcriptions", item, idx);
     });
 });
