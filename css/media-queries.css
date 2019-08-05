@@ -215,7 +215,7 @@
     }
 }
 
-@media only screen and (max-height: 630px) {
+@media only screen and (max-height: 610px) {
 
     h1#topname {
         font-size: 30pt;
