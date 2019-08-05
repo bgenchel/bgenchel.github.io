@@ -27,7 +27,7 @@ let DATA = {
                 ],
                 "media": {
                     "type": "soundcloud",
-                    "items": ["http://bit.ly/sc-sds2100-ost"],
+                    "items": ["https://bit.ly/sc-sds2100-ost"],
                     "download": null, 
                     "caption": null
                 }
@@ -36,7 +36,7 @@ let DATA = {
                 "title": "Trouble on Beryl Isle OST",
                 "year": {"begin": 2018, "end": null},
                 "description": [
-                    `Trouble on Beryl Isle is a game by <a href="http://sflanagan33.github.io/">Sean Flanagan</a>, 
+                    `Trouble on Beryl Isle is a game by <a href="https://sflanagan33.github.io/">Sean Flanagan</a>, 
                     developed by Flangan and <a href="https://vgdev.gtorg.gatech.edu/">VGDev</a> at Georgia Tech during the
                     Spring 2018 Semester.`, 
 
@@ -59,7 +59,7 @@ let DATA = {
                 ],
                 "media": {
                     "type": "soundcloud",
-                    "items": ["http://bit.ly/sc-tobi-ost"],
+                    "items": ["https://bit.ly/sc-tobi-ost"],
                     "download": null,
                     "caption": null
                 }
@@ -117,7 +117,7 @@ let DATA = {
                 ],
                 "media": {
                     "type": "soundcloud",
-                    "items": ["http://bit.ly/sc-space-walk"],
+                    "items": ["https://bit.ly/sc-space-walk"],
                     "download": null,
                     "caption": null
                 }
@@ -134,7 +134,7 @@ let DATA = {
                 ],
                 "media": {
                     "type": "soundcloud",
-                    "items": ["http://bit.ly/sc-gnc-beats"],
+                    "items": ["https://bit.ly/sc-gnc-beats"],
                     "download": null,
                     "caption": null
                 }
@@ -153,7 +153,7 @@ let DATA = {
                 ],
                 "media": {
                     "type": "soundcloud",
-                    "items": ["http://bit.ly/sc-beginning"],
+                    "items": ["https://bit.ly/sc-beginning"],
                     "download": null,
                     "caption": null
                 }
@@ -179,7 +179,7 @@ let DATA = {
                 ],
                 "media": {
                     "type": "soundcloud",
-                    "items": ["http://bit.ly/sc-95jc-live"],
+                    "items": ["https://bit.ly/sc-95jc-live"],
                     "download": null,
                     "caption": null
                 }
