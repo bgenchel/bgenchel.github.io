@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Explicitly Conditioned Melody Generation:</h1> 
+        <h1>A Case Study with Interdependent RNNs</h1>
+        <div id="author-info">
+            <div class="author-names"><p>
+                <a href="https://bgenchel.github.io">Benjamin Genchel</a><br/>
+                <a href="https://ashispati.github.io/">Ashis Pati</a><br/>
+                <a href="https://www.alexanderlerch.com/">Alexander Lerch</a>
+            </div>
+            <div class="author-affiliations"><p>
+                <a href="http://www.musicinformatics.gatech.edu/">Music Informatics Group</a></br>
+                <a href="https://gtcmt.gatech.edu/">Center for Music Technology</a></br>
+                <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>
+            </p></div>
+        </div>
+        <nav class="main-menu" role="navigation"> 
+            <a href="index.html"><div class="nav-link"><i class="my-fa fas fa-home"></i>Home</div></a>
+            <a href="abstract.html"><div class="nav-link"><i class="my-fa fas fa-bullseye"></i>Abstract</div></a>
+            <a href="model.html"><div class="nav-link"><i class="my-fa fas fa-network-wired"></i>Model</div></a>
+            <a href="data.html"><div class="nav-link"><i class="my-fa fas fa-music"></i>Data</div></a>
+            <a href="results.html"><div class="nav-link"><i class="my-fa fas fa-poll"></i>Results</div></a>
+            <a href="papers.html"><div class="nav-link"><i class="my-fa fas fa-file-alt"></i>Papers</div></a>
+        </nav>
+        <div id="view-this-project">
+            <a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation">
+                <i id="github-icon" class="fab fa-github-square"></i>
+            </a>
+            <p class="view"><a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation">
+                View the Project on GitHub
+                <small>bgenchel/Explicitly-Conditioning-Melody-Generation</small></a>
+            </p>
+        </div>
+      </header>
+      <section>
+        <h1>Abstract</h1>
+
+        <p>Deep generative models for symbolic music are typically designed to model temporal dependencies in music so
+        as to predict the next musical event given previous events. In many cases, such models are expected to learn
+        abstract concepts such as harmony, meter, and rhythm from raw musical data without any additional information.
+        In this study, we investigate the effects of explicitly conditioning deep generative models with musically rel-
+        evant information. Specifically, we study the effects of four different conditioning inputs on the performance
+        of an recurrent monophonic melody generation model. Several combinations of these conditioning inputs are used
+        to train different model variants which are then evaluated using three objective evaluation paradigms across two
+        genres of music. The results indicate that conditioning models with musically relevant information significantly
+        improves learning and performance, and reveal how this information affects learning of musical features related
+        to pitch and rhythm. An informal subjective evaluation suggests a corresponding improvement in the aesthetic
+        quality of generations.</p>
+
+        <hr>
+      </section>
+      <footer>
+        <p><small>Based on the Minimalist Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>

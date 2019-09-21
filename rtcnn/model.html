@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs</title>
+
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                TeX: { equationNumbers: { autoNumber: "AMS" } },
+                tex2jax: {
+                    inlineMath: [['$','$'], ['\\(','\\)']],
+                    processEscapes: true
+                }});
+        </script>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Explicitly Conditioned Melody Generation:</h1> 
+                <h1>A Case Study with Interdependent RNNs</h1>
+                <div id="author-info">
+                        <div class="author-names"><p>
+                                <a href="https://bgenchel.github.io">Benjamin Genchel</a><br/>
+                                <a href="https://ashispati.github.io/">Ashis Pati</a><br/>
+                                <a href="https://www.alexanderlerch.com/">Alexander Lerch</a>
+                        </div>
+                        <div class="author-affiliations"><p>
+                                <a href="http://www.musicinformatics.gatech.edu/">Music Informatics Group</a></br>
+                                <a href="https://gtcmt.gatech.edu/">Center for Music Technology</a></br>
+                                <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>
+                        </p></div>
+                </div>
+                <nav class="main-menu" role="navigation"> 
+                        <a href="index.html"><div class="nav-link"><i class="my-fa fas fa-home"></i>Home</div></a>
+                        <a href="abstract.html"><div class="nav-link"><i class="my-fa fas fa-bullseye"></i>Abstract</div></a>
+                        <a href="model.html"><div class="nav-link"><i class="my-fa fas fa-network-wired"></i>Model</div></a>
+                        <a href="data.html"><div class="nav-link"><i class="my-fa fas fa-music"></i>Data</div></a>
+                        <a href="results.html"><div class="nav-link"><i class="my-fa fas fa-poll"></i>Results</div></a>
+                        <a href="papers.html"><div class="nav-link"><i class="my-fa fas fa-file-alt"></i>Papers</div></a>
+                </nav>
+                <div id="view-this-project" class="more-links">
+                        <a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation">
+                                <i class="icon-link fab fa-github"></i>
+                        </a>
+                        <p class="view"><a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation">
+                            View this Project on GitHub</a>
+                        </p>
+                </div>
+            </header>
+            <section>
+                <h1>Model</h1>
+                <p>
+                    $\qquad$The base model architecture consists of two parallel LSTM-RNN based networks, denoted as
+                    $Pitch$ Network and $Duration$ Network, which model the pitch sequence $P$ and the duration 
+                    sequence $D$, respectively. The models are trained to maximize the conditional log-likelihood for 
+                    the current pitch and duration, given information about the previous notes. For the $Pitch$ network, this translates to 
+                    $$\max_{\theta_P}\sum_{t}logprob(P_t | I_{ \lt t}), t\in[0, L-1]\qquad(1)$$ 
+                    where $P_t$ is the pitch of the $t^{th}$ note, $I_{\lt t}$ is information about all notes that have
+                    occurred before the $t^{th}$ note, $L$ is number of notes in the melody, $\theta_P$ is the
+                    parameterization of the $Pitch$ network. Similarly, for the $Duration$ network, the equation is:
+                    $$\max_{\theta_D}\sum_{t}logprob(D_t | I_{\lt t}), t\in[0, L-1]\qquad(2)$$
+                    where $D_t$ is the duration of the $t^{th}$ note, $\theta_D$ is the parametrization of the $Duration$ network. 
+                    All other symbols retain the same meaning as in Equation 1.
+                    <br> 
+                    $\qquad$The term $I_t$, which denotes information for the $t^{th}$ note, is constructed by
+                    concatenating embeddings computed for each input in a given conditioning configuration. A list of 
+                    the conditioning configurations used is provided in Table 1. 
+                </p>
+                <table>
+                    <tr>
+                        <th>Conditioning Configuration</th>
+                        <th>Abbreviation</th>
+                    </tr> 
+                    <tr>
+                        <th>No Conditioning</th>
+                        <th>$\texttt{No-Cond}$</th>
+                    <tr>
+                    <tr>
+                        <th>Inter Conditioning</th>
+                        <th>$\texttt{I}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord Conditioning</th>
+                        <th>$\texttt{C}$</th>
+                    <tr>
+                    <tr>
+                        <th>Next Chord Conditioning</th>
+                        <th>$\texttt{N}$</th>
+                    <tr>
+                    <tr>
+                        <th>Bar Position Conditioning</th>
+                        <th>$\texttt{B}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Inter Conditioning</th>
+                        <th>$\texttt{CI}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Next Chord Conditioning</th>
+                        <th>$\texttt{CN}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Bar Position Conditioning</th>
+                        <th>$\texttt{CB}$</th>
+                    <tr>
+                    <tr>
+                        <th>Inter + Bar Position Conditioning</th>
+                        <th>$\texttt{IB}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Next Chord + Inter Conditioning</th>
+                        <th>$\texttt{CNI}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Next Chord + Bar Position Conditioning</th>
+                        <th>$\texttt{CNB}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Inter + Bar Position Conditioning</th>
+                        <th>$\texttt{CIB}$</th>
+                    <tr>
+                    <tr>
+                        <th>Chord + Next Chord + Inter + Bar Position Conditioning</th>
+                        <th>$\texttt{CNIB}$</th>
+                    <tr>
+                </table>
+                <p class="caption">$\small{\textbf{Table 1:}}$ List of all conditioning configurations. Each conditioning 
+                is implemented by concatenating one more additional embeddings to the input of the networks.
+                <p>
+                <p>
+                    $\qquad$The pitch embeddings $p_t$, duration embeddings $d_t$ and the bar-position embeddings $b_t$ are computed
+                    by processing the elements in $P$, $D$ and $B$, respectively, through their respective embedding layers.
+                    For chord embeddings $c_t$ and next chord embeddings $n_t$, the root token of the chords are passed
+                    through an embedding layer, while the pitch class vectors are encoded using a set of fully connected
+                    layers. The outputs of these layers are then concatenated, and subsequently processed together by a
+                    second set of fully connected layers to obtain the final chord embeddings.
+                    <br><br>
+                    $\qquad$In each conditioning configuration, embeddings for the used conditioning inputs are concatenated
+                    with the pitch and duration embeddings to form the information vector $I_t$. For example, in the
+                    $\texttt{No-Cond}$ configuration of the $\textit{Pitch}$ network, $I_t$ will only contain the pitch
+                    embedding, whereas in the $\texttt{CI}$ configuration, $I_t$ will be the concatenation of the pitch
+                    embedding, the current chord embedding, and the duration embedding. 
+                    <br><br>
+                    $I_t$ is then encoded by a set of fully connected layers before being passed through the LSTM-RNN. The output of the
+                    LSTM-RNN is decoded by a second set of fully connected layers and activations, followed by a Log-Softmax layer. An
+                    overview of the model architecture $\texttt{CNIB}$ configuration) is shown in Figure 1. All other
+                    configurations are a subset of this architecture, i.e, they can be derived by selectively removing a subset of the
+                    connections prior to the concatenation operation.
+                </p>
+                <img src="res/network-diagram-key.svg">
+                <p class="caption">
+                    $\small{\textbf{Figure 2:}}$ Model architecture overview — This figure displays the 
+                    CNIB configuration of the model, in which all conditioning inputs are all applied simultaneously. Other 
+                    configurations can be derived from this by selectively removing a subset of connections prior to the embedding
+                    concatenation operation.
+                </p>
+            </p>
+            </section>
+            <footer>
+                <p><small>Based on the Minimalist Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+            </footer>
+        </div>
+        <script src="javascripts/scale.fix.js"></script>
+    </body>
+</html>

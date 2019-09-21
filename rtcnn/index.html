@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>RT CNN</title>
+
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div id="sb-title">
+                    <h1>Real-Time Cooperative Improvisation by Learning Inter-Beat Dependencies</h1> 
+                </div>
+                <div id="author-info">
+                        <div class="author-names"><p>
+                            <a href="https://bgenchel.github.io">Richard Savery</a><br/>
+                            <a href="https://richardsavery.com">Benjamin Genchel</a><br/>
+                            <a href="https://music.gatech.edu/content/gil-weinberg">Gil Weinberg</a>
+                        </div>
+                        <div class="author-affiliations"><p>
+                            <a href="https://gtcmt.gatech.edu/robotic-musicianship">Robotic Musicianship Group</a></br>
+                            <a href="https://gtcmt.gatech.edu/">Center for Music Technology</a></br>
+                            <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>
+                        </p></div>
+                </div>
+                <nav class="main-menu" role="navigation"> 
+                    <a href="#intro"><div class="nav-link"><i class="my-fa fas fa-home"></i>Introduction</div></a>
+                    <a href="#abstract"><div class="nav-link"><i class="my-fa fas fa-bullseye"></i>Abstract</div></a>
+                    <a href="#audio"><div class="nav-link"><i class="my-fa fas fa-music"></i>Audio Samples</div></a>
+                    <!-- <a href="model.html"><div class="nav-link"><i class="my-fa fas fa-network-wired"></i>Model</div></a> -->
+                    <!-- <a href="results.html"><div class="nav-link"><i class="my-fa fas fa-poll"></i>Results</div></a> -->
+                    <!-- <a href="papers.html"><div class="nav-link"><i class="my-fa fas fa-file-alt"></i>Papers</div></a> -->
+                </nav>
+                <!-- <div id="view-this-project"> -->
+                <!--     <a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation"> -->
+                <!--         <i id="github-icon" class="fab fa-github-square"></i> -->
+                <!--     </a> -->
+                    <!-- <p class="view"><a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation"> -->
+                    <!--     View the Project on GitHub -->
+                    <!--     <small>bgenchel/Explicitly-Conditioning-Melody-Generation</small></a> -->
+                    <!-- </p> -->
+                <!-- </div> -->
+            </header>
+            <section id="intro">
+                <h1>Introduction</h1>
+                <p>This website is a companion to the 
+                <a href="https://neurips2019creativity.github.io">
+                    NeurIPS 2019 Machine Learning for Creativity and Design Workshop</a> submission of the same name,
+                which discussing a real-time convolutional neural network based musical improvisation system. Here, we
+                provide audio, video and other content which characterizes the system and its use by performers. 
+            </section>
+            <section id="abstract">
+                <h1>Abstract</h1>
+                <p>We present a simple, easy to train, and effective interactive real-time system forgenerating musical
+                improvisations in performance with human musicians. The system comprises a Max/MSP patch communicating
+                with a generative convolutional neural network and uses a novel data format that appears to allow
+                improvedlearning of non-local dependencies and repetitive structure across beats within musical phrases.
+                We have observed that this system is able to learn to generateconvincing and coherent improvisations
+                from relatively small amounts of data, can run effectively with limited computational resources, and
+                produces pleasing musical interactions in a live performance setting.</p>
+            </section>
+            <section id="audio">
+                <h1>Audio Samples</h1>
+                <p>The following audio samples showcase an improviser interacting with the system over an eight bar
+                loop harmonized by the C7 chord. In each sample, the melody over the first four bars is played by a 
+                human improviser, while the last four are 'played' by our system &mdash; the melody is generated using
+                the human improviser's solo as input. We use a marimba instrument to render the generated melody because
+                in performance, these melodies are played on a marimba by our resident musical robot, 
+                <a href="https://www.shimonrobot.com">Shimon</a>.</p></br>
+                <audio controls>
+                    <source src="res/audio/1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio></br></br>
+                <audio controls>
+                    <source src="res/audio/3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio></br></br>
+                <audio controls>
+                    <source src="res/audio/2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio></br></br>
+                <audio controls>
+                    <source src="res/audio/4.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio></br></br>
+                <audio controls>
+                    <source src="res/audio/5.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio></br></br>
+                <p><small>Based on the Minimalist Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+            </section>
+            </footer>
+        </div>
+        <script src="javascripts/scale.fix.js"></script>
+    </body>
+</html>

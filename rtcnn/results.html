@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs</title>
+
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div id="sb-title">
+                    <h1>Explicitly Conditioned Melody Generation:<br style="line-height: 1.3">
+                    A Case Study with Interdependent RNNs</h1> 
+                    <!-- <h1>A Case Study with Interdependent RNNs</h1> -->
+                </div>
+                <div id="author-info">
+                    <div class="author-names"><p>
+                        <a href="https://bgenchel.github.io">Benjamin Genchel</a><br/>
+                        <a href="https://ashispati.github.io/">Ashis Pati</a><br/>
+                        <a href="https://www.alexanderlerch.com/">Alexander Lerch</a>
+                    </div>
+                    <div class="author-affiliations"><p>
+                        <a href="http://www.musicinformatics.gatech.edu/">Music Informatics Group</a></br>
+                        <a href="https://gtcmt.gatech.edu/">Center for Music Technology</a></br>
+                        <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>
+                    </p></div>
+                </div>
+                <nav class="main-menu" role="navigation"> 
+                    <a href="index.html"><div class="nav-link"><i class="my-fa fas fa-home"></i>Home</div></a>
+                    <a href="abstract.html"><div class="nav-link"><i class="my-fa fas fa-bullseye"></i>Abstract</div></a>
+                    <a href="model.html"><div class="nav-link"><i class="my-fa fas fa-network-wired"></i>Model</div></a>
+                    <a href="data.html"><div class="nav-link"><i class="my-fa fas fa-music"></i>Data</div></a>
+                    <a href="results.html"><div class="nav-link"><i class="my-fa fas fa-poll"></i>Results</div></a>
+                    <a href="papers.html"><div class="nav-link"><i class="my-fa fas fa-file-alt"></i>Papers</div></a>
+                </nav>
+                <div id="view-this-project">
+                    <a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation">
+                        <i id="github-icon" class="fab fa-github-square"></i>
+                    </a>
+                    <p class="view"><a href="https://github.com/bgenchel/Explicitly-Conditioning-Melody-Generation">
+                        View the Project on GitHub
+                        <small>bgenchel/Explicitly-Conditioning-Melody-Generation</small></a>
+                    </p>
+                </div>
+                </header>
+            <section>
+                <h1>Results</h1>
+                <h2 style="text-align: center">Generation Examples</h2>
+                <h3>Bebop Generation Examples</h3>
+                <iframe width="100%" height="300" scrolling="no" frameborder="yes" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/749811996&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div style="height: 1em"></div>
+                <h3>Folk Generation Examples</h3>
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/749795055&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div style="height: 3em"></div>
+                <h2 style="text-align: center">Negative Log Likelihood</h2>
+                <div style="text-align: center">
+                    <img src="res/data_tables/ValidationNLL.svg" style="text-align: center">
+                </div>
+                <p class="caption"> 
+                    The Validation NLL training curves for a subset of model configurations, 
+                    <br>adding increasing numbers of conditioning information.
+                </p> 
+                <div style="text-align: center">
+                    <img src="res/data_tables/NLL-Folk_Pitch.svg">
+                </div>
+                <div style="text-align: center">
+                    <img src="res/data_tables/NLL-Folk_Duration.svg">
+                </div>
+                <div style="text-align: center">
+                    <img src="res/data_tables/NLL-Jazz_Pitch.svg">
+                </div>
+                <div style="text-align: center">
+                    <img src="res/data_tables/NLL-Jazz_Duration.svg">
+                </div>
+                <p class="caption"> 
+                The final validation NLL values acheived by each model <br>
+                configuration for each component network on each dataset.
+                </p> 
+                <h2 style="text-align: center">MGEval Results</h2>
+                <p>
+                    The <a href="https://github.com/RichardYang40148/mgeval">MGEval (Music Generation Evaluation)
+                        toolbox</a> was designed for objective evaluation of music generation systems. It uses several
+                    music specific, pitch and duration-based
+                    features to measure the degree to which generated music is able to match the statistics of
+                    the data it was trained on. For each feature calculated for each generated sample and real sample
+                    from the training data, a probability distribution is computed over the intra set euclidean
+                    distances between samples within the generated set and training set, as well as an inter-set
+                    distribution between samples in each set. The performance of a 
+                    generative model is evaluated by computing the distance between these probability distributions 
+                    across the training data and generated melodies using KL-divergence and Overlap. This toolbox is used to compare the performance of each
+                    conditioning configuration and to further analyze the impact of each condition (I, C, N, and B). 
+                    We first generate new melodies using our conditioning configurations for each nontransposed song in both datasets. 
+                    Melodies are generated by feeding an initial seed of 10 notes to the trained models and then recurrently 
+                    sampling pitch/duration values from the output Softmax distributions. For models requiring chords,
+                    we use the chord progressions from the lead sheets. A set of 12 features, sub-categorized into 
+                    pitch and duration types, is computed for both the generated melodies and the original melodies in 
+                    the datasets. The KL-Divergence (lower is better) and Overlap (higher is better) between the 
+                    predicted distribution and inter-set distribution is used as the performance metric.
+                    <br><br>
+                    Below, we have provided the raw KL-Divergence and Overlap values calculated between the training
+                    (target) and generated (predicted) intra-set distributions and training / generated inter-set
+                    distribution for each feature, for each dataset, and for each configuration. In each 'KL' column,
+                    the lowest three values are bolded and highlighted, while in each 'Overlap' column, the highest
+                    three values are bolded and highlighted.
+                </p>
+                <img src="res/data_tables/avg-IOI.png">
+                <p class="caption">Average Inter-Onset Interval - <br>the average distance between note beginnings, a scalar value.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/avg-pitch-shift.png">
+                <p class="caption">Average Pitch Shift - <br>the average value of the interval between two consecutive
+                pitches, a scalar value.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/bar-used-note.png">
+                <p class="caption">The number of unique duration values used per a bar, a vector of N x 1 where N is the
+                number of bars in the sample.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/bar-used-pitch.png">
+                <p class="caption">The number of unique pitch values used per a bar, a vector of N x 1 where N is the
+                number of bars in the sample.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/note-length-histogram.png">
+                <p class="caption">A count of duration values used in a sample, a vector of 24 where each element is the
+                number of appearances of 24 discrete duration values.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/note-length-transition-matrix.png">
+                <p class="caption"> The two-dimensional note-length class transition matrix is a histogram-like 
+                representation computed by counting the note-length transitions for each (ordered) pair of notes.
+                The resulting feature dimensionality is 24 × 24.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/pitch-class-transition-matrix.png">
+                <p class="caption"> The two-dimensional pitch class transition matrix is a histogram-like 
+                representation computed by counting the pitch transitions for each (ordered) pair of notes.
+                The resulting feature dimensionality is 12 × 12.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/pitch-range.png">
+                <p class="caption">  The pitch range is calculated by subtraction of the highest and lowest used pitch in
+                semitones. The output is a scalar for each sample.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/total-pitch-class-histogram.png">
+                <p class="caption"> A histogram of the number of octave-independent pitch classes used in a sample, a
+                vector of size 12</p> 
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/total-used-note.png">
+                <p class="caption"> The total number of used notes, a scalar.</p>
+                <div style="height: 1em"></div>
+                <img src="res/data_tables/total-used-pitch.png">
+                <p class="caption"> The total number of unique pitches (octave-dependent) used, a scalar.</p>
+                <h3>T-Test Results</h3>
+                <img src="res/data_tables/wins-losses/t-tests.png">
+            </section>
+            <footer>
+                <p><small>Based on the Minimalist Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+            </footer>
+        </div>
+        <script src="javascripts/scale.fix.js"></script>
+    </body>
+</html>
