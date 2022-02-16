@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" } },
+            tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                processEscapes: true
+            }});
+    </script>
 
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
@@ -51,6 +62,18 @@
       </header>
       <section>
         <h1>Data</h1>
+        <p>Training and testing of the models is performed using two monophonic melodic datasets.</p>
+        <list>
+        <li><b>FolkDB</b><sup>1</sup> $\qquad$FolkDB comprises of chord-annotated lead sheets in the Scottish and Irish folk tradition. The original dataset is converted from .abc format to MusicXML. Only melodies with 4/4 time signature and chord annotations were used, resulting in a total of 254 melodies.</li>
+        <li><b>BebopDB</b><sup>2</sup> $\qquad$For the purposes of this study, we created a new dataset of well annotated Bebop Jazz lead sheets in MusicXML format. Each lead sheet contains a monophonic melody with chord annotations, where the chord annotations are placed with specific timing relative to a bar.
+        </br>
+            $\qquad$At present, the dataset consists of 147 lead sheets from 61 composers. The dataset contains 275 unique chords and 20 unique chord types (e.g., major7, sus4). The longest song in the dataset contains 96 bars, while the shortest contains 12; songs average around 35 bars. The largest number of notes in a bar is 24, and the minimum is 1, with an average of around 6 notes per bar.</li>
+        </list>
+        </br>
+        <h4>Data Pre-processing</h4> 
+        <p>All melodies are transposed to all root notes by shifting each piece up 5 semi-tones and down 6 semi-tones. This results in 3042 songs for FolkDB and 1617 songs for BebopDB. Transposing the songs, as opposed to shifting each song to the same key, allows the models to better learn songs with key changes.</p>
+        <p>[1] <a href="https://github.com/IraKorshunova/folk-rnn/tree/master/data">https://github.com/IraKorshunova/folk-rnn/tree/master/data</a></br>
+            [2] This dataset is not posted publicly due to copyright concern. Please reach out to the authors directly if you would like to access it.</p>
       </section>
       <footer>
         <p><small>Based on the Minimalist Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
